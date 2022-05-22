@@ -7,6 +7,18 @@
 
 
   }
+html,body{
+  heigh: 100%;
+  font-size: 1rem;
+}
+
+
+.page-header{
+    font-size: 1.25rem;
+    color:#fff;
+    background: #608783 ;
+}
+
 
 .bgimg{
     background-image: url('../images/josh-rose-trYl7JYATH0-unsplash.jpg');
@@ -17,7 +29,7 @@ pre{
   font-size: 20px;
 }
 .maintext p{
-    font-size:125px:
+    font-size:125px;
 }
 
 
@@ -37,12 +49,12 @@ pre{
 }
 
 .navbar{
-    background: #366166;
+    background: #608783;
 }
 
 .navbar-nav{
     /* margin-left: 700px; */
-    background: #366166;
+    background: #608783;
 
 }
 
@@ -120,12 +132,12 @@ pre{
         }
         .imgfol img{
             width:150px;
-            height:150px'
+            height:150px;
             object-fit:contain;
         }
         .contactImage img{
             width:160px;
-            height:160px'
+            height:160px;
             object-fit:contain;
         }
     }
@@ -232,8 +244,11 @@ pre{
 }
 
 .contact_me1{
-    Background:#366166;
-    color: #fff;
+    background: rgb(249,249,249);
+    background: linear-gradient(
+    90deg,
+    rgba(95,166,158,1) 0%,
+    rgb(59, 95, 91) 56%, rgb(29, 87, 102) 100%);    color: #fff;
     position:786px;
 }
 
