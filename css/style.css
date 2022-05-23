@@ -85,7 +85,7 @@ pre{
    margin-top: -60px;
 }
 .navbar-toggler{
-    text-white;
+    text:text-white;
 }
 
 .navbar-nav li a:hover:before{
@@ -271,4 +271,8 @@ pre{
     letter-spacing: 2px;
     padding:10px;
     font-size: 20px;
+}
+
+.cookiesPage{
+    background-color: #f9f8f5;
 }
