@@ -310,7 +310,7 @@ footer {
   }
 
   .navbuttoncta {
-    color: var(--color-border);
+    color: #fff3e0;
     background-color: transparent;
     box-sizing: border-box;
     display: flex;
@@ -1152,7 +1152,7 @@ footer {
     }
 
     .navbuttoncta {
-      color: var(--color-border);
+      color: #fff3e0;
       background-color: transparent;
       box-sizing: border-box;
       display: flex;
