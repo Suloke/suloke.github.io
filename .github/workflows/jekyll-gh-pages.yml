@@ -34,7 +34,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
       - name: Install dependencies
         run: npm install
       - name: Build
@@ -48,6 +47,4 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        run: |
-          npm install -g gh-pages
-          gh-pages --dist ./dist --dotfiles --verbose
+        uses: actions/deploy-pages@v1
