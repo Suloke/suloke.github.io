@@ -48,7 +48,6 @@ jobs:
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
-        with:
-          # Add verbose flag for debugging
-          args: --verbose
+        run: |
+          npm install -g gh-pages
+          gh-pages --dist ./dist --dotfiles --verbose
