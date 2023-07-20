@@ -310,7 +310,8 @@ footer {
   }
 
   .navbuttoncta {
-    color: #fff3e0;
+    opacity: 0;
+    color: var(--color-border);
     background-color: transparent;
     box-sizing: border-box;
     display: flex;
@@ -323,8 +324,8 @@ footer {
 
   .navbuttoncta:hover {
     border-radius: 1000px;
-    box-shadow: 0px 4px #fff3e0;
-    border: 1px solid #fff3e0;
+    box-shadow: 0px 4px var(--color-border);
+    border: 1px solid var(--color-border);
   }
 
   .capabilities {
@@ -931,20 +932,59 @@ footer {
     border-style: solid;
     width: 8vh;
     height: 8vh;
+
+  }
+
+  .pause-animation {
+    animation-play-state: paused;
+  }
+
+  .move-icon {
+    animation: move-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 12;
+    animation-delay: 4s;
+    animation-timing-function: ease;
+  }
+
+  .move-icon2 {
+    animation: move-animation;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
+    animation-delay: 4.2s;
+    animation-timing-function: ease;
+  }
+
+  @keyframes move-animation {
+    0% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(-1vw);
+    }
+    20% {
+      transform: translateY(0);
+    }
   }
 
   .logomobile {
-    top: 4vw;   
+    top: 3vh;   
     left: 4vw;
     z-index: 0;
     position: fixed;
   }
 
+  .slide {
+    box-sizing: border-box;
+    padding-top: 8vh;
+    padding-bottom: 14vh; 
+    }
+
   .slide-content {
     box-sizing: border-box;
-    height: 74vh;
-    align-self: center;
-    justify-self: center;
+    height: 78vh;
+    align-self: center!important;
+    justify-self: center!important;
     width: 92vw;
     position: relative;
     background-color: var(--color-primary);
@@ -954,8 +994,8 @@ footer {
     align-items: center !important;
     justify-content: center !important;
     justify-items: center !important;
-    padding-top: 1vh !important;
-    padding-bottom: 1vh !important;
+    padding-top: 2vh !important;
+    padding-bottom: 2vh !important;
     padding-left: 2vw !important;
     padding-right: 2vw !important;
     float: center;
@@ -963,16 +1003,11 @@ footer {
     z-index: 2;
   }
 
-  .slide {
-    padding-bottom: 10vh;
-    }
-
   .layout {
     display: grid;
     grid-template-columns: 4% 92% 4%;
     height: 100%;
     width: 100%;
-    
   }
   
   .left-column {
@@ -1068,7 +1103,7 @@ footer {
  
   header {
     background-color: transparent;
-    height: 12vh;
+    height: 8vh;
     display: flex;
     position: sticky;
     top: 0;
@@ -1081,7 +1116,7 @@ footer {
       footer {
         background-color: transparent;
         box-sizing: border-box;       
-        height: 10%;
+        height: 8vh;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -1109,9 +1144,9 @@ footer {
       box-sizing: border-box;
       flex-direction: column; 
       overflow: hidden;
-      justify-content: space-between !important;
-      justify-items: space-between !important;
-      height: 70vh !important;
+      justify-content: space-around !important;
+      justify-items: space-around !important;
+      height: 74vh !important;
       width: 88vw;
       padding: 4vw;
       overflow: hidden;
@@ -1130,13 +1165,12 @@ footer {
       overflow-wrap: break-word !important;
       word-wrap: break-word !important;
       white-space: normal !important;
-      margin-top: 4vw;
-      margin-bottom: 12vw;
     }
 
     .contactbutton {
       height: 15vw;
       width: 28vw; 
+      border: none;
       border-radius: 4px;
       background-color: var(--color-background);
       color: var(--color-border);
@@ -1152,7 +1186,7 @@ footer {
     }
 
     .navbuttoncta {
-      color: #fff3e0;
+      color: var(--color-border);
       background-color: transparent;
       box-sizing: border-box;
       display: flex;
@@ -1164,9 +1198,9 @@ footer {
     }
 
     .navbuttoncta:hover {
-      border-radius: 4px;
-      box-shadow: 4px 4px #fff3e0;
-      border: 1px solid #fff3e0;
+      border-radius: 100px;
+      box-shadow: 4px 4px var(--color-border);
+      border: 1px solid var(--color-border);
     }
 
     .contactbuttoncontainer {
@@ -1175,6 +1209,8 @@ footer {
       justify-content: space-between;   
       align-content: flex-end;
       bottom: 2vw !important;
+      padding: 2vw;
+      height: 8vh;
     }
 
     .capabilities {
@@ -1193,10 +1229,10 @@ footer {
       display: flex;
       box-sizing: border-box;
       flex-direction: column !important;
-      justify-content: space-around !important;
+      justify-content: space-between !important;
       align-items: space-between;
       overflow: hidden;
-      height: 72vh;
+      height: 74vh;
       width: 88vw;
       padding: 2vw !important;
       background-color: var(--color-primary);
@@ -1207,13 +1243,14 @@ footer {
       display: flex;
       box-sizing: border-box;
       flex-direction: row !important;
-      justify-content: space-between;
+      justify-content: center;
       align-content: center;
       min-width: 80vw;
-      min-height: 10vh;
+      height: 26vh;
     }
 
     .reftext p {  
+      align-self: center;
       box-sizing: border-box;
       font-size: 11px;
       margin-left: 3vw; 
@@ -1222,7 +1259,10 @@ footer {
       padding-right: 3vw;
       border-left: solid 1px #fff3e046;
       border-right: solid 1px #fff3e046;
+    }
 
+    .reftext h2 {
+      align-self: center;
     }
 
     .testimonial {
@@ -1308,10 +1348,10 @@ footer {
       display:flex;
       flex-direction: column-reverse;
       box-sizing: border-box;                                                          
-      justify-content: flex-start;  
+      justify-content: space-around;  
       overflow: hidden;
       width: 88vw;
-      height: 72vh !important;
+      height: 74vh !important;
       padding: 4vw;
       border-radius: 12px;
   }
@@ -1349,7 +1389,7 @@ footer {
       background-color: var(--color-background);
       color: var(--color-border);
       font-size: 3vh;
-      border: 1px solid var(--color-border);
+      border: none;
     }
     
     .phone {
@@ -1376,7 +1416,7 @@ footer {
       background-color: var(--color-background);
       color: var(--color-border);
       font-size: 12px !important;
-      border: 1px solid var(--color-border);
+      border: none;
     }
 
     .emailbutton:hover, .phonebutton:hover {
@@ -1423,7 +1463,7 @@ footer {
       font-size: 4vw;
       font-family: Hubballi;
       letter-spacing: 0.36ch;
-      border: 1px solid var(--color-border);
+      border: none;
     }
 
     .bookbutton:hover {
@@ -1568,11 +1608,12 @@ footer {
     
   .accordion {
     box-sizing: border-box;
-    height: 72vh;
+    height: 74vh;
     overflow: hidden;
     width: 88vw;
     align-self: center;
     justify-self: center;
+
   }
     
   .accordion ul {
@@ -1583,9 +1624,10 @@ footer {
     justify-self: center;
     background-color: #0c0c0c;
     width: 88vw;
-    height: 72vh;
+    height: 74vh;
     border-radius: 12px;
     overflow: hidden;
+
   }
 
   .accordion > ul {
@@ -1598,7 +1640,7 @@ footer {
     align-self: center !important;
     display: block;
     position: relative;
-    height: 24vh;
+    height: 24.66vh;
     width: 88vw;
     background-repeat: no-repeat;
     background-position: right top;
