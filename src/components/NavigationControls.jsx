@@ -19,45 +19,33 @@ const NavigationControls = ({
   }, [activeIndex]);
   return (
     <>
-      {/* {activeIndex !== 0 && (
-        <>
-          <button onClick={handleTopSlide}>Top</button>
-          <button onClick={handlePrevSlide}>Previous</button>
-        </>
-      )}
-      {activeIndex !== slidesLength - 1 && (
-        <>
-          <button onClick={handleNextSlide}>Next</button>
-          <button onClick={handleBottomSlide}>Bottom</button>
-        </>
-      )} */}
-
       <>
         <button
           onClick={scrollToTop}
-          className="navbutton navtop"
+          className={`navbutton navtop ${activeIndex === 0 ? 'pause-animation' : 'move-icon2'}`}
           style={{ opacity: activeIndex === 0 ? 0.14 : 1 }}
         >
           <KeyboardDoubleArrowUpRoundedIcon />
         </button>
         <button
           onClick={scrollToPrevSection}
-          className="navbutton navup"
+          className={`navbutton navup ${activeIndex === 0 ? 'pause-animation' : 'move-icon2'}`}
           style={{ opacity: activeIndex === 0 ? 0.14 : 1 }}
         >
           <KeyboardArrowUpRoundedIcon />
         </button>
         <button
           onClick={scrollToNextSection}
-          className="navbutton navdown"
+          className={`navbutton navdown ${activeIndex === slidesLength - 1 ? 'pause-animation' : 'move-icon'}`}
           style={{ opacity: activeIndex === slidesLength - 1 ? 0.14 : 1 }}
         >
           <KeyboardArrowDownRoundedIcon />
         </button>
         <button
           onClick={scrollToBottom}
-          className="navbutton navbottom"
-          style={{ opacity: activeIndex === slidesLength - 1 ? 0.14 : 1 }}
+          className={`navbutton navbottom ${activeIndex === slidesLength - 1 ? 'pause-animation' : 'move-icon2'}`}
+          style={{ opacity: activeIndex === slidesLength - 1 ? 0.14 : 1}}
+
         >
           <KeyboardDoubleArrowDownRoundedIcon />
         </button>
