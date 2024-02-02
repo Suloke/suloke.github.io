@@ -1114,7 +1114,7 @@ footer {
       /* Navbar */
   
       footer {
-        background-color: transparent;
+        background-color: var(--color-background);
         box-sizing: border-box;       
         height: 8vh;
         width: 100%;
@@ -1672,7 +1672,7 @@ footer {
   }
 
   .accordion ul li div a * {
-    opacity: 0.4 !important;
+    opacity: 0.3 !important;
     margin: 0;
     text-overflow: ellipsis;
     justify-content: space-around;
@@ -1684,6 +1684,11 @@ footer {
     -webkit-transition: all 400ms ease;
     transition: all 400ms ease;
     color: #fff3e0;
+  }
+
+    .accordion ul li div a .profcontent {
+    background-color: transparent;
+
   }
 
   .accordion ul li div a h2 {
@@ -1713,7 +1718,7 @@ footer {
   }
 
   .accordion ul li div a .title {
-    opacity: 0.2 !important;
+    opacity: 0.1 !important;
     text-overflow: clip;
     text-transform: uppercase;
     margin-bottom: 4vh;
