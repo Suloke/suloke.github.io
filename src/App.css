@@ -1672,7 +1672,7 @@ footer {
   }
 
   .accordion ul li div a * {
-    opacity: 0 !important;
+    opacity: 0.4 !important;
     margin: 0;
     text-overflow: ellipsis;
     justify-content: space-around;
@@ -1680,8 +1680,7 @@ footer {
     z-index: 5;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-transform: translateX(-6vw);
-    transform: translateX(-6vw);
+    
     -webkit-transition: all 400ms ease;
     transition: all 400ms ease;
     color: #fff3e0;
@@ -1714,14 +1713,12 @@ footer {
   }
 
   .accordion ul li div a .title {
-    opacity: 0 !important;
+    opacity: 0.2 !important;
     text-overflow: clip;
     text-transform: uppercase;
     margin-bottom: 4vh;
     top: 1vh;
     margin-left: 2vw;
-    -webkit-transform: translateX(+8);
-    transform: translateX(+8);
   }
 
   .accordion ul li:nth-child(1) {
@@ -1774,8 +1771,6 @@ footer {
   .accordion ul:hover li:hover title *,
   .accordion ul li:focus title *, .accordion ul:focus-within li:focus title * {
     opacity: 1;
-    -webkit-transform: translateX(-8);
-    transform: translateX(-8);
   }
   .accordion ul:hover li {
     height: 14% !important;
