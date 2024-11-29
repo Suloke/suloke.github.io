@@ -1212,7 +1212,7 @@ footer {
     }
     
     .introtext {
-      line-height: 176% !important;
+      line-height: 124% !important;
       color: #fff3e0;
       overflow-wrap: break-word !important;
       word-wrap: break-word !important;
@@ -1222,7 +1222,7 @@ footer {
     .introtext p {
       font-size: 12px;
       letter-spacing: 0.24ch;
-      line-height: 176%;
+      line-height: 124%;
     }
 
     .contactbutton {
