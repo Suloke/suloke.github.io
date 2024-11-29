@@ -491,7 +491,12 @@ footer {
     width: 100%;
     margin-bottom: 5vh;
   }
+  .moreslogo {
 
+  }
+  .arboreflogo {
+
+  }
   /*CONTACT*/
 
 
@@ -1358,7 +1363,14 @@ footer {
       width: 100%;
       margin-bottom: 2vh;
     }
-
+    .moreslogo {
+      height: 14vw;
+      width: auto;
+    }
+    .arboreflogo {
+      height: 8vw;
+      width: auto;
+    }
     .testimonial {
       display: flex !important;
       flex-direction: column;

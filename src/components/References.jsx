@@ -14,10 +14,10 @@ const References = () => {
           <h2 className="ac">IN COLLABORATION WITH</h2>
             <div className="reflogos">
               <a href="http://www.arbonaut.com" target="_blank" rel="noopener noreferrer">
-                <ArboLogo/>
+                <div className="arboreflogo"><ArboLogo/></div>
               </a>
               <a href="http://mores-horizon.eu" target="_blank" rel="noopener noreferrer">
-                <MoresLogo/>
+                <div className="moreslogo"><MoresLogo/></div>
               </a>
             </div>
 
