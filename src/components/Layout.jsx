@@ -4,16 +4,17 @@ import ThemeToggle from "../components/ThemeToggle";
 import LanguageToggle from "../components/LanguageToggle";
 import { Logo, MobileLogo } from "../components/Logo";
 import Slide1 from "./slides/Slide1";
-import Slide2 from "./slides/Slide2";
 import Slide3 from "./slides/Slide3";
 import Slide4 from "./slides/Slide4";
+import Slide5 from "./slides/Slide5";
+import Slide2 from "./slides/Slide2";
 import NavigationControls from "./NavigationControls";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 import { OpenPrivacyPolicy, ClosePrivacyPolicy } from "./ContactButton";
 
 
 const Layout = () => {
-  const sections = [Slide1, Slide2, Slide3, Slide4];
+  const sections = [Slide1,   Slide2, Slide3, Slide4, Slide5,  ];
   const theme = useSelector((state) => state.theme);
 
   const [currentSection, setCurrentSection] = useState(0);

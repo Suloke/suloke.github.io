@@ -1,7 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Profiles from "../Profiles";
-const Slide2 = () => {
+
+const Slide3 = () => {
   const { t } = useTranslation();
   return (
     <div>
@@ -10,4 +11,4 @@ const Slide2 = () => {
   );
 };
 
-export default Slide2;
+export default Slide3;

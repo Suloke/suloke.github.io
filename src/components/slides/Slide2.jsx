@@ -1,14 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import References from "../References";
+import Offers from "../Offers";
 
-const Slide3 = () => {
+const Slide2 = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <References />
+      <Offers />
     </div>
   );
 };
 
-export default Slide3;
+export default Slide2;

@@ -92,7 +92,7 @@ opacity: 1;
 
 /* Desktop layout */
 
-  @media screen and (min-width: 900px) {                                               /* DESKTOP */
+  @media screen and (min-width: 1000px) {                                               /* DESKTOP */
 
 
     
@@ -229,7 +229,7 @@ footer {
     color: var(--color-paragraph);
     font-size: 12px;
     letter-spacing: 0.24ch;
-    line-height: 136%;
+    line-height: 120%;
     font-family: Open sans;
   }
 
@@ -277,6 +277,12 @@ footer {
     box-sizing: border-box;
     margin-top: 4vh;
     margin-bottom: 4vh;
+  }
+
+  .introtext p {
+    font-size: 14px;
+    letter-spacing: 0.24ch;
+    line-height: 136%;
   }
 
   .contactbuttoncontainer {
@@ -344,12 +350,26 @@ footer {
     display:flex;
     box-sizing: border-box; 
     flex-direction: column;                                                          /* DESKTOP */
+    justify-items: space-between !important;
+    justify-content: space-between !important;
+    overflow: hidden;
+    width: 100%;
+    height: 100% !important;
+    padding: 4vh;
+    background-color: var(--color-primary);
+    border-radius: 4px;
+  }
+
+  .offers {
+    display:flex;
+    box-sizing: border-box; 
+    flex-direction: column;                                                          /* DESKTOP */
     justify-items: space-around !important;
     justify-content: space-around !important;
     overflow: hidden;
     width: 100%;
-    height: 64vh !important;
-    padding: 4vh;
+    height: 100% !important;
+    padding: 0vh;
     background-color: var(--color-primary);
     border-radius: 4px;
   }
@@ -359,18 +379,20 @@ footer {
     box-sizing: border-box;
     justify-content: space-between;
     align-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
-    height: 30%;
-    margin-bottom: 4vh; 
+    height: auto;
+    margin-bottom: 2vh; 
+    margin-top: 2vh;
   }
 
   .reftext p {
-    text-align: center;
+    float: right;
     margin-left: 3vh;
     margin-right: 3vh;
     padding-left: 3vh;
     padding-right: 3vh;
+    font-size: 14px;
     border-left: solid 1px #fff3e046;
     border-right: solid 1px #fff3e046;
   }
@@ -384,27 +406,27 @@ footer {
   }
 
   .quotemark {
-    color: var(--color-paragraph);
+    color: var(--color-heading);
   }
 
   .testimonial {
     box-sizing: border-box;
     display: flex;
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
+    flex-direction: column;
+    justify-items: flex-end;
     overflow: hidden;
     padding: 3vh;
     bottom: 0vh;
-    background-color: var(--color-background);
     height: 100%;
   }   
 
   .quote {  
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 8px;
     justify-content: center;
-    color: var(--color-paragraph);
+    color: var(--color-heading);
     font-size: 16px;
     font-style: bold;
     shape-outside: circle()!important;
@@ -417,19 +439,19 @@ footer {
   .signature {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: justify;
     overflow-wrap: break-word !important;
     word-wrap: break-word !important;
     white-space: normal !important;
     float: right;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
   }
 
   .testimonial:hover {
-    box-shadow: 4px 4px var(--color-border);
-    border: 1px solid var(--color-border);
+    /*box-shadow: 4px 4px var(--color-border);
+    border: 1px solid var(--color-border);*/
   }
   .tuomosign {
     text-align: center;
@@ -442,10 +464,33 @@ footer {
   .tuomopic img {
     border-radius: 12px;
   }
+  .reftechs {
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;                                                           /* DESKTOP */
+    justify-content: space-around;  
+    overflow: hidden;
+    width: 100%;
+    max-height: 40px;
+    margin-bottom: 2vh;
+  }
 
+  .reftechs p {
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
 
-
-
+  .reflogos {
+    display:flex;
+    flex-direction: row;
+    box-sizing: border-box;                                                           /* DESKTOP */
+    justify-content: space-around; 
+    align-items: flex-end; 
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
 
   /*CONTACT*/
 
@@ -908,7 +953,7 @@ footer {
 
 /* Mobile Layout */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
   .ThemeToggle {
     display: flex;
@@ -1167,14 +1212,20 @@ footer {
       white-space: normal !important;
     }
 
+    .introtext p {
+      font-size: 12px;
+      letter-spacing: 0.24ch;
+      line-height: 176%;
+    }
+
     .contactbutton {
-      height: 15vw;
-      width: 28vw; 
+      height: 10vw;
+      width: 24vw; 
       border: none;
       border-radius: 4px;
       background-color: var(--color-background);
       color: var(--color-border);
-      font-size: 4vw;
+      font-size: 3.5vw;
       font-family: Hubballi;
       letter-spacing: 0.24ch;
       text-align: center;
@@ -1238,6 +1289,20 @@ footer {
       background-color: var(--color-primary);
       border-radius: 12px;
     }
+
+    .offers {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column !important;
+      justify-content: space-around !important;
+      align-items: space-around;
+      overflow: hidden;
+      height: 74vh;
+      width: 88vw;
+      padding: 2vw !important;
+      background-color: var(--color-primary);
+      border-radius: 12px;
+    }
   
     .reftext {
       display: flex;
@@ -1265,6 +1330,35 @@ footer {
       align-self: center;
     }
 
+    .reftechs {
+      display:flex;
+      flex-direction: row;
+      box-sizing: border-box;                                                           /* DESKTOP */
+      justify-content: space-around;  
+      overflow: hidden;
+      width: 100%;
+      max-height: 40px;
+      margin-bottom: 2vh;
+    }
+  
+    .reftechs p {
+      float: right;
+      opacity: 0.6;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
+    .reflogos {
+      display:flex;
+      flex-direction: row;
+      box-sizing: border-box;                                                           /* DESKTOP */
+      justify-content: space-around;  
+      align-items: flex-end;
+      overflow: hidden;
+      width: 100%;
+      margin-bottom: 2vh;
+    }
+
     .testimonial {
       display: flex !important;
       flex-direction: column;
@@ -1275,15 +1369,12 @@ footer {
       max-height: 50vh !important;
       max-width: 84vw !important;
       box-sizing: border-box;
-      border: 1px solid var(--color-border);
-      border-radius: 12px;
-      background-color: var(--color-background);
       padding: 2vw !important;
       bottom: 4vw !important;
     }
 
     .quotemark {
-      color: var(--color-paragraph);
+      color: var(--color-heading);
       top: 0vw !important;
       align-self: flex-start !important;
       justify-self: flex-start !important;
@@ -1308,18 +1399,18 @@ footer {
     .signature {
       display: flex;
       flex-direction: row !important; 
-      justify-items: space-around; 
+      justify-items: flex-end; 
       align-items: center;
       height: 100%;
     }
 
     .testimonial:hover {
-      box-shadow: 4px 4px var(--color-border);
-      border: 1px solid var(--color-border);
+      /*box-shadow: 4px 4px var(--color-border);
+      border: 1px solid var(--color-border);*/
     }
 
     .tuomosign {
-      color: var(--color-paragraph);
+      color: var(--color-heading);
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.36ch;
@@ -1336,7 +1427,10 @@ footer {
     }    
 
     .arbologo img {
-      margin-bottom: 2vw;
+      display: flex;
+      width: 14vw !important;
+      height: auto !important;
+      float: right;
   
     }
 
@@ -1812,7 +1906,7 @@ footer {
         
 .light {
 
-      --color-primary: #375351;
+      --color-primary: #2D2A26;
 
       --color-border: #121212;
     
@@ -1824,7 +1918,7 @@ footer {
 
       --color-attention: #ff9900;
     
-      --color-background: #dedede;
+      --color-background: #fff3e0;
     
       --color-error: #ff1900;
 

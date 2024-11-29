@@ -3,8 +3,8 @@ import { useSelector } from "react-redux";
 import LogoImageDark from "../assets/logo-dark.png";
 import LogoImageLight from "../assets/logo-light.png";
 import ArboLogoDark from "../assets/arbonaut-dark.png";
-import ArboLogoLight from "../assets/arbonaut.png";
 import TuomoK from "../assets/Tuomo_Kauranne.png";
+import MoresLogoDark from "../assets/MoresLogo.png";
 
 
 const Logo = () => {
@@ -50,11 +50,11 @@ const ArboLogo = () => {
   return (
     <div>
       <img
-        src={theme === "dark" ? ArboLogoDark : ArboLogoLight}
+        src={theme === "dark" ? ArboLogoDark : ArboLogoDark}
         style={{
-          width: "22vw",
+          width: "auto",
 
-          height: "auto",
+          height: "5vh",
         }}
         alt="ArboLogo"
       />
@@ -95,4 +95,21 @@ const Tuomo = () => {
     </div>
   );
 };
-export { Logo, MobileLogo, ArboLogo, WBLogo, Tuomo };
+const MoresLogo = () => {
+  const theme = useSelector((state) => state.theme);
+
+  return (
+    <div>
+      <img
+        src={theme === "dark" ? MoresLogoDark : MoresLogoDark}
+        style={{
+          height:"10vh",
+          width: "auto",
+          display: "flex",
+        }}
+        alt="MoresLogo"
+      />
+    </div>
+  );
+};
+export { Logo, MobileLogo, ArboLogo, WBLogo, Tuomo , MoresLogo};
