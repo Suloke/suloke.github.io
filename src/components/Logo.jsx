@@ -54,7 +54,7 @@ const ArboLogo = () => {
         style={{
           width: "auto",
 
-          height: "5vh",
+          height: "3vh",
         }}
         alt="ArboLogo"
       />
@@ -103,7 +103,7 @@ const MoresLogo = () => {
       <img
         src={theme === "dark" ? MoresLogoDark : MoresLogoDark}
         style={{
-          height:"10vh",
+          height:"6vh",
           width: "auto",
           display: "flex",
         }}

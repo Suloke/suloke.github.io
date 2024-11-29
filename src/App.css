@@ -1285,8 +1285,8 @@ footer {
       display: flex;
       box-sizing: border-box;
       flex-direction: column !important;
-      justify-content: space-between !important;
-      align-items: space-between;
+      justify-content: space-around !important;
+      align-items: space-around;
       overflow: hidden;
       height: 74vh;
       width: 88vw;
@@ -1360,17 +1360,18 @@ footer {
       flex-direction: row;
       box-sizing: border-box;                                                           /* MOBILE */
       justify-content: space-around;  
-      align-items: flex-end;
+      align-items: center;
       overflow: hidden;
       width: 100%;
+      height: 35vh;
       margin-bottom: 2vh;
     }
     .moreslogo {
-      height: 9vw;
+      height: 5vh;
       width: auto;
     }
     .arboreflogo {
-      height: 5vw;
+      height: 3vh;
       width: auto;
     }
     .testimonial {
@@ -1415,7 +1416,8 @@ footer {
       flex-direction: row !important; 
       justify-items: flex-end; 
       align-items: center;
-      height: 100%;
+      float: right;
+      width: 100%;
     }
 
     .testimonial:hover {
@@ -1441,6 +1443,7 @@ footer {
     }    
 
     .arbologo img {
+      margin: 1vw;
       display: flex;
       width: 14vw !important;
       height: auto !important;
