@@ -1195,8 +1195,8 @@ footer {
       box-sizing: border-box;
       flex-direction: column; 
       overflow: hidden;
-      justify-content: space-around !important;
-      justify-items: space-around !important;
+      justify-content: center !important;
+      justify-items: center !important;
       height: 74vh !important;
       width: 88vw;
       padding: 4vw;
