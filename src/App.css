@@ -1198,6 +1198,7 @@ footer {
       justify-content: center !important;
       justify-items: center !important;
       height: 74vh !important;
+      min-height: 74vh !important;
       width: 88vw;
       padding: 4vw;
       overflow: hidden;
