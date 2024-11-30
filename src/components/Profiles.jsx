@@ -19,7 +19,7 @@ const Profiles = () => {
                   <h2 className="ac">Samuli</h2><h2 className="h22">Kujala</h2>
                   <h3 className="title">Manager - CEO</h3>
                   <div className="profcontent">
-                    <p className="profiletext">{t("The general manager at Suloke, Samuli also takes the lead in all things design. With background in graphic design and marketing, he will guide you through the user-side considerations of your business. ")}</p>
+                    <p className="profiletext">{t("The general manager at Suloke, Samuli also takes the lead in all things design. With background in graphic design and marketing, he will guide you through the user-side considerations of your business.")}</p>
                       <div className="techs">
                         <div>React</div>
                         <div>CSS</div>

@@ -27,7 +27,7 @@ const References = () => {
             </div>
             <div className="reftext">
             <h2 className="ac">MOBILE</h2>
-              <p className="ac">{t("Suloke offers a wealth of experience in mobile development, with a special emphasis on crowdsourcing and map-integration. Understanding the customers needs is key to succesful app development; we work by collaborative design, integrating stakeholders in to the planning process from the get-go. And whatever the plan, our experienced project management can weave the technology in to the shape you need.                     ")}</p>
+              <p className="ac">{t("Suloke offers a wealth of experience in mobile development, with a special emphasis on crowdsourcing and map-integration. Understanding the customers needs is key to succesful app development; we work by collaborative design, integrating stakeholders in to the planning process from the get-go. And whatever the plan, our experienced project management can weave the technology in to the shape you need.")}</p>
             </div>
             <div className="reftechs">
               <p className="ac">flutter</p>
