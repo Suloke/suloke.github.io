@@ -11,7 +11,7 @@ const References = () => {
     return (
       <div>
         <div className="references">
-          <h2 className="ac">IN COLLABORATION WITH</h2>
+          <h2 className="ac">{t("IN COLLABORATION WITH")}</h2>
             <div className="reflogos">
               <a href="http://www.arbonaut.com" target="_blank" rel="noopener noreferrer">
                 <div className="arboreflogo"><ArboLogo/></div>
