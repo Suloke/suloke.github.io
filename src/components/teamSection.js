@@ -25,7 +25,8 @@ const TeamSection = ({ dictionary }) => {
 
   const teamMembers = [
     {
-      imageSrc: "/Photos/samuli-478-882.png",
+      // imageSrc: "/Photos/samuli-478-882.png",
+      imageSrc: "/Photos/samuli-mobile.png",
       fullName: "Samuli Kujala",
       position: "CEO — Design lead",
       description: dictionary.samuliDesc,

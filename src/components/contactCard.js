@@ -3,7 +3,7 @@ import Image from "next/image";
 const ContactCard = ({ color, dict }) => {
   return (
     <div className={`flex flex-cols rounded-lg border-box w-auto ${color}`}>
-      <div className="w-32">
+      <div className="w-48">
         <Image
           className="h-full rounded-l-lg border-box"
           src={"/Photos/samuli-478-882.png"}
@@ -12,6 +12,7 @@ const ContactCard = ({ color, dict }) => {
           alt={"Samuli Kujala"}
           style={{
             objectFit: "cover",
+            objectPosition: "left",
           }}
         />
       </div>

@@ -26,24 +26,25 @@ const ArrowBlocks = ({ content }) => {
       });
     };
 
-    function debounce(func, wait) {
-      let timeout;
-      return function (...args) {
-        const later = () => {
-          clearTimeout(timeout);
-          func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-      };
-    }
+    // function debounce(func, wait) {
+    //   let timeout;
+    //   return function (...args) {
+    //     const later = () => {
+    //       clearTimeout(timeout);
+    //       func(...args);
+    //     };
+    //     clearTimeout(timeout);
+    //     timeout = setTimeout(later, wait);
+    //   };
+    // }
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("animate-fade-in");
-            window.addEventListener("scroll", debounce(handleScroll, 10));
+            // window.addEventListener("scroll", debounce(handleScroll, 10));
+            window.addEventListener("scroll", handleScroll);
           }
         });
       },

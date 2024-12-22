@@ -2,19 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 :root {
-  --background: #2D2A26;
+  --background: #2d2a26;
   --foreground: #fff3e0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #2D2A26;
-    ;
+    --background: #2d2a26;
     --foreground: #fff3e0;
   }
 }
@@ -52,10 +53,21 @@
   }
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'hubballi';
+  font-family: "hubballi";
   top: 0px !important;
   max-width: 2000px;
   padding: 0 0px;
@@ -65,29 +77,32 @@ body > .skiptranslate {
   display: none;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   /* styleName: H1 - Suloke; */
-font-family: Hubballi;
-font-size: 36px;
-font-weight: 400;
-line-height: 34.42px;
-letter-spacing: 0.09em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+  font-family: Hubballi;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 34.42px;
+  letter-spacing: 0.09em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   /* styleName: H2 - Suloke; */
-font-family: Hubballi;
-font-size: 28px;
-font-weight: 400;
-line-height: 26.77px;
-letter-spacing: 0.01em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+  font-family: Hubballi;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 26.77px;
+  letter-spacing: 0.01em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   /* styleName: H3 - Suloke; */
   font-family: Hubballi;
   font-size: 14px;
@@ -96,42 +111,42 @@ h3, .h3 {
   letter-spacing: 0.06em;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  
 }
 
-h4, .h4 {
+h4,
+.h4 {
   /* styleName: H4 - Suloke; */
-font-family: Hubballi;
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0.04em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+  font-family: Hubballi;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
-p, .p {
+p,
+.p {
   /* styleName: P - Suloke; */
-font-family: Open Sans;
-font-size: 14px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0.07em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
-li, .li {
+li,
+.li {
   /* styleName: P - Suloke; */
-font-family: Open Sans;
-font-size: 14px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0.06em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .animate-fade-in {

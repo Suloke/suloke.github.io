@@ -61,20 +61,25 @@ const CollabQuote = ({ references }) => {
             />
             <p className="italic pt-4 pr-3 md:pr-5 lg:pr-5">{ref.quote}</p>
           </div>
-          <div className="flex flex-row justify-end items-center pl-11 gap-x-3">
+          <div className="flex flex-col justify-end items-end pl-11 gap-y-1 gap-x-3">
             <h2 className="">-{ref.author}</h2>
-            <p className="pt-1">{ref.level} of</p>
-            {ref.useLogo ? (
-              <Image
-                src={ref.logoSrc}
-                width={120}
-                height={50}
-                alt={`${ref.author} logo`}
-                className=""
-              />
-            ) : (
-              <p className="">{ref.textSrc || "No logo available"}</p>
-            )}
+            <div className="flex flex-row items-center gap-x-3">
+              <p className="pt-1">{ref.level} of</p>
+              {ref.useLogo ? (
+                <Image
+                  src={ref.logoSrc}
+                  width={120}
+                  height={50}
+                  alt={`${ref.author} logo`}
+                  className=""
+                  style={{
+                    objectFit: "contain",
+                  }}
+                />
+              ) : (
+                <p className="">{ref.textSrc || "No logo available"}</p>
+              )}
+            </div>
           </div>
         </div>
       ))}

@@ -50,11 +50,11 @@ const Home = async (props) => {
             SULOKE — {dictionary.home.title}
           </h1>
           <BannerSection dictionary={dictionary.bannerSection} />
-          <div className="flex flex-col gap-y-10 px-20">
+          <div className="flex flex-col gap-y-10 md:px-20 px-5">
             {" "}
             {/* Who we are */}
             <h2 className="px-2">{dictionary.home.headerWhoWeAre}</h2>
-            <p className="px-4">
+            <p className="px-2 md:px-4">
               {dictionary.home.textWhoWeAre1}
               <br></br>
               <br></br>
@@ -65,12 +65,12 @@ const Home = async (props) => {
           <div className="flex flex-col gap-y-14 md:px-20 pt-14 md:pt-20 pb-10">
             {" "}
             {/* Collaborators */}
-            <h2>{dictionary.home.headerCollaboration}</h2>
+            <h2 className="px-2">{dictionary.home.headerCollaboration}</h2>
             <CollabCard logos={logos} /> {/* Set of logo-links */}
             <div className="flex flex-row w-full items-center justify-center">
               {" "}
               {/* Reference */}
-              <div className="flex flex-col gap-y-10 pt-14 md:pt-20  md:w-2/3 lg:w-2/3">
+              <div className="flex flex-col gap-y-10 pt-14 md:pt-20  md:w-3/4 lg:w-3/4">
                 <CollabQuote references={references} />
               </div>
             </div>
