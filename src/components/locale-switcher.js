@@ -73,7 +73,7 @@ export default function LocaleSwitcher() {
                 key={locale}
                 href={redirectedPathname(locale)}
                 onClick={() => handleLocaleChange(locale)}
-                className="block px-4 py-2 text-sm text-suloke-black hover:bg-suloke-cyan hover:text-suloke-white hover transition duration-300 ease-in-out"
+                className="block px-4 py-2 text-sm text-suloke-black hover:bg-suloke-yellow hover:text-suloke-white hover transition duration-300 ease-in-out"
                 role="menuitem"
                 id={`menu-item-${index}`}
                 tabIndex="-1"
