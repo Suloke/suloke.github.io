@@ -50,10 +50,12 @@ const BannerSection = ({ dictionary }) => {
             filter brightness-125 transition-all duration-300 ease-in-out
             hover:brightness-150"
           style={{
-            filter: `drop-shadow(0 0 15px ${competencies[cardHoveredIndex].color}20)`,
+            filter: `drop-shadow(0 0 15px ${
+              competencies[cardHoveredIndex].color || "#A3004C"
+            }20)`,
           }}
-          src={competencies[cardHoveredIndex].icon}
-          alt={competencies[cardHoveredIndex].altText}
+          src={competencies[cardHoveredIndex].icon || "/website.svg"}
+          alt={competencies[cardHoveredIndex].altText || "Icon"}
           width={150}
           height={150}
         />

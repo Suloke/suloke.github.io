@@ -75,11 +75,11 @@ const TeamCard = ({
           </h3>
         </div>
         <div
-          className={`transition-opacity rounded-lg duration-300 overflow-hidden p-5 mt-4 bg-suloke-black/70
+          className={`transition-[opacity,background-color] rounded-lg duration-300 overflow-hidden p-5 mt-4
               ${
                 isExpanded
-                  ? "opacity-100 overflow-y-auto no-scrollbar lg:delay-200"
-                  : "opacity-10 lg:opacity-0 lg:delay-0 lg:duration-0"
+                  ? "opacity-100 overflow-y-auto no-scrollbar lg:delay-200 bg-suloke-black/70"
+                  : "opacity-10 lg:opacity-0 lg:delay-0 lg:duration-0 bg-suloke-black/0"
               }`}
         >
           <p className="text-suloke-white/80 mb-4">{description}</p>
