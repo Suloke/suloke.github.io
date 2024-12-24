@@ -10,6 +10,7 @@ const TeamCard = ({
   isExpanded,
   onExpand,
   expandedIndex,
+  bgColor,
   onMouseEnter,
   onMouseLeave,
 }) => {
@@ -21,8 +22,11 @@ const TeamCard = ({
       onClick={onExpand}
       // onMouseEnter={onMouseEnter}
       // onMouseLeave={onMouseLeave}
+      style={{
+        backgroundImage: `linear-gradient(${bgColor[0]} 0%, ${bgColor[1]} 50%, ${bgColor[2]} 100%)`,
+      }}
       className={`
-        w-full lg:h-full cursor-pointer relative bg-suloke-grey transition-all duration-300 overflow-hidden
+        w-full lg:h-full cursor-pointer relative transition-all duration-300 overflow-hidden
         ${
           isLastCard
             ? ""
@@ -39,7 +43,7 @@ const TeamCard = ({
       <div className="absolute right-0 top-0 z-0 overflow-hidden">
         <Image
           className={`
-            h-[200px] w-auto object-cover transition-height duration-300
+            h-[200px] w-auto object-cover transition-height duration-300 object-right
             ${
               isExpanded
                 ? "h-[650px] lg:h-[732px] xl:h-[795px] 2xl:h-[945px]"
@@ -54,7 +58,7 @@ const TeamCard = ({
           priority
         />
       </div>
-      <div className="relative flex flex-col py-4 px-2 z-10 max-w-[55%] h-full lg:max-w-full lg:justify-between">
+      <div className="relative flex flex-col py-4 px-2 z-10 max-w-full h-full sm:max-w-[55%] lg:max-w-full justify-between">
         <div className="flex flex-col">
           <div className="flex flex-row items-center gap-2 pl-3">
             <h2 className="text-3xl">{firstName}</h2>
@@ -75,10 +79,10 @@ const TeamCard = ({
           </h3>
         </div>
         <div
-          className={`transition-opacity rounded-lg duration-300 overflow-hidden p-5 mt-4 bg-suloke-black/70
+          className={`transition-opacity rounded-lg duration-300 overflow-hidden p-5 mt-4 
               ${
                 isExpanded
-                  ? "opacity-100 overflow-y-auto no-scrollbar lg:delay-200"
+                  ? "opacity-100 bg-suloke-black/70 lg:delay-200"
                   : "opacity-10 lg:opacity-0 lg:delay-0 lg:duration-0"
               }`}
         >
