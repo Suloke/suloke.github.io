@@ -80,7 +80,7 @@ const ArrowBlocks = ({ content }) => {
           {index < content.text.length - 1 && (
             <div
               ref={(el) => (arrowRefs.current[index] = el)}
-              className="flex items-end w-full justify-start ml-2 mb-2 arrow will-change-transform"
+              className="flex items-end justify-start ml-2 mb-2 arrow will-change-transform"
             >
               <Image
                 src={content.settings.src}

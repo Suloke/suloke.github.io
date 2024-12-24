@@ -44,9 +44,9 @@ const Home = async (props) => {
 
   return (
     <section>
-      <div className="flex flex-col w-full px-5 pt-48 pb-14 items-center content-center align-center">
+      <div className="flex flex-col w-full px-5 pt-24 pb-14 items-center content-center align-center">
         <div className="md:w-4/5 lg:w-3/5 gap-y-14 md:gap-y-20 lg:gap-y-20">
-          <h1 className="text-center pb-24">
+          <h1 className="text-center pb-12">
             SULOKE — {dictionary.home.title}
           </h1>
           <BannerSection dictionary={dictionary.bannerSection} />

@@ -28,7 +28,7 @@ const BannerSection = ({ dictionary }) => {
   ];
 
   return (
-    <div className="flex flex-row w-full relative items-center justify-center gap-x-40 pr-20 pt-20 pb-64">
+    <div className="flex flex-row w-full relative items-center justify-center gap-x-40 pr-20 pt-20 pb-40">
       <div className="flex w-full flex-col gap-y-5 items-center">
         {" "}
         {/* Banner */}

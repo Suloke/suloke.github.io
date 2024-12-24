@@ -30,6 +30,7 @@ const TeamSection = ({ dictionary }) => {
       fullName: "Samuli Kujala",
       position: "CEO — Design lead",
       description: dictionary.samuliDesc,
+      bgColor: ["#090d10", "#080c0f", "#07080a"],
       skills:
         "FIGMA  NEXT.JS  REACT  UI-DESIGN  UX-DESIGN  PYTHON  CSS  TAILWIND GRAPHIC-DESIGN",
     },
@@ -38,16 +39,18 @@ const TeamSection = ({ dictionary }) => {
       fullName: "Sowrov Doha",
       position: "CIO — Frontend lead",
       description: dictionary.sowrovDesc,
+      bgColor: ["#161313", "#1e1a18", "#191817"],
       skills:
-        "C/C++  flutter native development  kotlin  dart  swift  room  clean architecture  android jetpack  mapbox  maP libre  google maps  react native  bloc",
+        "flutter native development  C/C++  kotlin  dart  swift  room  mapbox  clean architecture  bloc  android jetpack  maP libre  google maps  react native",
     },
     {
       imageSrc: "/Photos/ahmed-478-882.png",
       fullName: "Ahmed Shaibani",
       position: "CTO — Backend lead",
       description: dictionary.ahmedDesc,
+      bgColor: ["#131311", "#191917", "#151513"],
       skills:
-        "PYTHON  aws  Next.js  machine learning  javascript  docker  stata  sql  r  big data  scikit learn  tableu  linux",
+        "PYTHON  aws  Next.js  machine learning  linux  javascript  docker  stata  sql  r  big data  scikit learn  tableu",
     },
   ];
 
@@ -68,6 +71,7 @@ const TeamSection = ({ dictionary }) => {
             skills={member.skills}
             isLastCard={index === teamMembers.length - 1}
             expandedIndex={expandedIndex}
+            bgColor={member.bgColor}
             isExpanded={expandedIndex === index}
             onMouseLeave={() => setExpandedIndex(null)}
             onMouseEnter={() =>
