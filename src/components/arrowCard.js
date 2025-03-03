@@ -1,10 +1,17 @@
 import Link from "next/link";
 
-const ArrowCard = ({ text, target, setCardHoveredIndex, index, color }) => {
+const ArrowCard = ({
+  text,
+  target,
+  setCardHoveredIndex,
+  index,
+  color,
+  lang,
+}) => {
   return (
     <Link
       className={`min-w-[200px] w-full max-w-[300px] rounded-lg`}
-      href={`${target}`}
+      href={`/${lang}/${target}`}
       onMouseEnter={() => setCardHoveredIndex(index)}
       onMouseLeave={() => setCardHoveredIndex(null)}
     >

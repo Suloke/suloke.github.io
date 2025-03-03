@@ -46,10 +46,10 @@ const Home = async (props) => {
     <section>
       <div className="flex flex-col w-full px-5 pt-24 pb-14 items-center content-center align-center">
         <div className="md:w-4/5 lg:w-3/5 gap-y-14 md:gap-y-20 lg:gap-y-20">
-          <h1 className="text-center pb-12">
+          <h1 className="text-center pb-12 mt-[8vh]">
             SULOKE — {dictionary.home.title}
           </h1>
-          <BannerSection dictionary={dictionary.bannerSection} />
+          <BannerSection lang={lang} dictionary={dictionary.bannerSection} />
           <div className="flex flex-col gap-y-10 md:px-20 px-5">
             {" "}
             {/* Who we are */}

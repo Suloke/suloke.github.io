@@ -4,7 +4,7 @@ import { useState } from "react";
 import ArrowCard from "@/components/arrowCard";
 import Image from "next/image";
 
-const BannerSection = ({ dictionary }) => {
+const BannerSection = ({ lang, dictionary }) => {
   const [cardHoveredIndex, setCardHoveredIndex] = useState(null);
 
   const competencies = [
@@ -40,6 +40,7 @@ const BannerSection = ({ dictionary }) => {
             target={competency.target}
             setCardHoveredIndex={setCardHoveredIndex}
             color={competency.color}
+            lang={lang}
           />
         ))}
       </div>
