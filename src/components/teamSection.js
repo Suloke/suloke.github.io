@@ -32,7 +32,7 @@ const TeamSection = ({ dictionary }) => {
       description: dictionary.samuliDesc,
       bgColor: ["#090d10", "#080c0f", "#07080a"],
       skills:
-        "FIGMA  NEXT.JS  REACT  UI-DESIGN  UX-DESIGN  PYTHON  CSS  TAILWIND GRAPHIC-DESIGN",
+        "FIGMA  NEXT.JS  REACT  UI-DESIGN  UX-DESIGN  PYTHON  CSS  TAILWIND  GRAPHIC-DESIGN",
     },
     {
       imageSrc: "/Photos/sowrov-478-882.png",
@@ -41,7 +41,7 @@ const TeamSection = ({ dictionary }) => {
       description: dictionary.sowrovDesc,
       bgColor: ["#161313", "#1e1a18", "#191817"],
       skills:
-        "flutter native development  C/C++  kotlin  dart  swift  room  mapbox  clean architecture  bloc  android jetpack  maP libre  google maps  react native",
+        "flutter  native development  C/C++  kotlin  dart  swift  room  mapbox  clean architecture  bloc  android jetpack  maP libre  google maps  react native",
     },
     {
       imageSrc: "/Photos/ahmed-478-882.png",
