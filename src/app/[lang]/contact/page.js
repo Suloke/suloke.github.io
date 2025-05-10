@@ -12,7 +12,7 @@ const Page = async (props) => {
   const dict = await getDictionary(lang);
 
   return (
-    <div className="flex flex-col gap-y-6 px-5 py-28 items-center w-fit justify-self-center">
+    <div className="flex flex-col gap-y-6 px-5 py-20 items-center w-fit justify-self-center">
       <div className="flex rounded-lg border-box w-auto bg-suloke-grey">
         <div className="w-32 h-48">
           <Image

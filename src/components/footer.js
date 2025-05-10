@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +27,12 @@ const Footer = ({ lang }) => {
         </Link>
       </div>
       <div className="flex flex-col gap-y-3">
-        <div className="flex flex-row gap-x-2 justify-center">
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText("+358 44 99 99 618");
+          }}
+          className="flex flex-row gap-x-2 justify-center"
+        >
           <div className="flex w-4 h-4">
             <Image
               src={"/phone-icon.svg"}
@@ -35,9 +42,14 @@ const Footer = ({ lang }) => {
             />
           </div>
           <h4>+358 44 99 99 618</h4>
-        </div>
+        </button>
 
-        <div className="flex flex-row gap-x-2 justify-center">
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText("contact@suloke.com");
+          }}
+          className="flex flex-row gap-x-2 justify-center"
+        >
           <div className="flex w-4 h-4">
             <Image
               src={"/email-icon.svg"}
@@ -47,7 +59,7 @@ const Footer = ({ lang }) => {
             />
           </div>
           <h4>contact@suloke.com</h4>
-        </div>
+        </button>
       </div>
     </div>
   );

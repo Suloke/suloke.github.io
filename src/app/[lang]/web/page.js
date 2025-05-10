@@ -189,7 +189,11 @@ const page = async (props) => {
         <div className="flex flex-col gap-y-10 pt-14 md:pt-20 pb-10">
           {" "}
           {/* Contact */}
-          <ContactCard color={"bg-suloke-magentalight"} dict={contactCard} />
+          <ContactCard
+            color={"bg-suloke-magentalight"}
+            dict={contactCard}
+            lang={lang}
+          />
         </div>
       </div>
     </div>
