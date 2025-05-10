@@ -16,7 +16,7 @@
     "title": "核心團隊",
     "ahmedDesc": "⁠Ahmed負責Suloke的後端開發以及數據庫管理、AI和大數據分析。在他7年的嚴格行業經驗中，他參與了與世界銀行的各種項目，包括ProACT平台。",
     "sowrovDesc": "擁有9年的移動開發行業經驗。他在所有前端開發方面工作，涵蓋多個平台移動應用程序到網頁應用程序。",
-    "samuliDesc": "Suloke的總經理Samuli在所有設計事務中也擔任領導。憑藉平面設計和市場營銷的背景，他將指導您考慮業務的用戶方面。" 
+    "samuliDesc": "Suloke的總經理Samuli在所有設計事務中也擔任領導。憑藉平面設計和市場營銷的背景，他將指導您考慮業務的用戶方面。"
   },
   "webPage": {
     "title": "網站設計與開發",
@@ -40,8 +40,8 @@
     "contentText4": "網站完成後，我們將進行用戶驗收測試，確保網站符合在發現階段和設計階段與客戶共同確定的需求。一旦網站應用程式上線，我們的團隊將為您提供使用指導和支持，並提供保證期以確保您的新網站能夠正常運行。",
     "h2WeAreFluentIn": "我們熟悉"
   },
-   "mobilePage": {
-     "quote": "Suloke接受了Arbonaut的挑戰性全堆棧開發任務- 客戶Arbonaut: 「這是一個整合衛星和眾包Wildfire數據的應用程序，擁有移動和網絡門戶。Suloke的專業團隊積極承擔這一任務，熟練且獨立地交付了一個全面的應用程序。我對結果非常滿意，並愉快地推薦Suloke處理嚴格的開發任務！」",
+  "mobilePage": {
+    "quote": "Suloke接受了Arbonaut的挑戰性全堆棧開發任務- 客戶Arbonaut: 「這是一個整合衛星和眾包Wildfire數據的應用程序，擁有移動和網絡門戶。Suloke的專業團隊積極承擔這一任務，熟練且獨立地交付了一個全面的應用程序。我對結果非常滿意，並愉快地推薦Suloke處理嚴格的開發任務！」",
     "title": "手機應用程式開發",
     "text1": "Suloke 擁有超過十年的手機應用程式開發經驗，特別強調群眾外包和地圖集成。我們知道，了解客戶需求是成功開發應用程式的關鍵。我們通過協作設計進行工作，從一開始就將利益相關者融入規劃過程。不論計劃是什麼，我們經驗豐富的項目管理能夠將技術整合進您所需的形式。",
     "h2OurProcess": "我們的流程",
@@ -57,6 +57,20 @@
     "contentText5": "完成的應用程式將進行用戶驗收測試，確保應用程式符合在發現階段和設計階段與客戶共同確定的需求。已測試並批准的應用程式將通過 Google Play Store（Android）、Apple Store（iOS）、Appcenter 或類似平台進行內部發佈。其他部署渠道也是可行的。",
     "contentTitle6": "保養階段",
     "contentText6": "在部署後，我們使用 Firebase Crashlytics 等工具來定位和修復穩定性問題。我們還使用性能工具，如 Firebase Performance Monitoring，來確保應用程式運行順暢。我們可以收集有關用戶如何使用應用程式的更多數據，以進一步評估其是否符合客戶需求，並了解哪些功能不足，或需要進一步開發應用程式。我們可以收集行為數據、使用互動、反饋和技術數據。"
+  },
+  "contactPage": {
+    "addContact": "将我添加到通讯录",
+    "email": "电子邮件",
+    "wechat": "微信",
+    "linkedin": "领英",
+    "close": "关闭",
+    "copyWechatId": "复制微信 ID",
+    "goToWechat": "转至微信",
+    "sendEmail": "写电子邮件",
+    "copyEmail": "复制电子邮件",
+    "copied": "已复制！",
+    "copyWhatsApp": "副本编号",
+    "openWhatsApp": "打开 WhatsApp"
   },
   "privacyPolicy": {
     "title1": "隱私權政策",

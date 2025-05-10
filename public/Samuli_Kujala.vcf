@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Samuli Kujala
+N:Kujala;Samuli;;;
+EMAIL;type=WORK,INTERNET:contact@suloke.com
+TEL;TYPE=WORK,VOICE:+358 44 99 99 618
+TITLE:CEO
+URL:https://www.suloke.com
+X-SOCIALPROFILE;TYPE=Linkedin:https://www.linkedin.com/in/samuli-kujala-66a60922a/
+ORG:Suloke OY
+END:VCARD

@@ -22,14 +22,6 @@ const Header = ({ lang }) => {
           </h3>
         </Link>
         <LocaleSwitcher />
-        {/* <div className="py-2">
-                    <Image
-                        src={'/globe-icon.svg'}
-                        width={24}
-                        height={24}
-                        alt="suloke-logo"
-                    />
-                </div> */}
       </div>
     </div>
   );

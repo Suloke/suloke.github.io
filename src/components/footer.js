@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = ({ lang }) => {
   return (
-    <div className="flex flex-row items-center justify-between px-5 py-4 md:px-60 w-full">
+    <div className="flex flex-row items-center justify-between px-5 py-4 w-full">
       <div className="pr-2">
         <Link href={`/${lang}`}>
           <Image

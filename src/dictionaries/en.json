@@ -2,7 +2,7 @@
   "home": {
     "title": "A capable development studio from Finland",
     "headerWhoWeAre": "WHO WE ARE",
-    "textWhoWeAre1": "Suloke is a fullstack development studio offering professional design, planning, management and development in all things IT. Our team brings together over to decades of demanding industry experience in IT-development, ensuring predictability and quality of service.",
+    "textWhoWeAre1": "Suloke is a fullstack development studio offering professional design, planning, management and development in all things IT. Our team brings together over two decades of demanding industry experience in IT-development, ensuring predictability and quality of service.",
     "textWhoWeAre2": "Our core values are quality, transparency and trust. Our experienced core team strives for quality of service and customer experience. We work collaboratively with you, keeping open communications and transparency as our central guidelines. Facilitating trust among stakeholders creates success; we are a reliable partner.",
     "headerCollaboration": "IN COLLABORATION WITH",
     "quote": "Suloke was tasked by Arbonaut with a challenging full-stack development: an application integrating satellite and crowdsourced wildfire data, with mobile and web portals. Suloke's skilled experts undertook the task with vigour, skilfully and independently delivering a comprehensive app. I am highly impressed with the outcome and happily recommend Suloke for demanding development tasks!"
@@ -16,7 +16,7 @@
     "title": "THE CORE TEAM",
     "ahmedDesc": "Ahmed handles Backend development at Suloke, as well as database management, AI and big data analytics. Within his 7-years of demanding industry experience, he worked on various projects with the World Bank, including the ProACT-platform",
     "sowrovDesc": "With decade of industry experience with mobile development, Sowrov is working with all aspects of Frontend development from multi-platform mobile applications to web applications.",
-    "samuliDesc": "The general manager at Suloke, Samuli also takes the lead in all things design. With a background in graphic design and marketing, he will guide you through the user-side considerations of your business." 
+    "samuliDesc": "The general manager at Suloke, Samuli also takes the lead in all things design. With a background in graphic design and marketing, he will guide you through the user-side considerations of your business."
   },
   "webPage": {
     "title": "WEB DESIGN AND DEVELOPMENT",
@@ -40,8 +40,8 @@
     "contentText4": "The ready site will be subjected to User Acceptance Testing, masking sure the site adheres to the requirements set with the customer during Discovery and Design. Once the web-application has been launched, our team provides you with guidance and support in using the site, as well as a period of guarantee for the proper functioning of your new site.",
     "h2WeAreFluentIn": "WE ARE FLUENT IN.."
   },
-   "mobilePage": {
-     "quote": "Suloke was tasked by Arbonaut with a challenging full-stack development: an application integrating satellite and crowdsourced wildfire data, with mobile and web portals. Suloke's skilled experts undertook the task with vigour, skilfully and independently delivering a comprehensive app. I am highly impressed with the outcome and happily recommend Suloke for demanding development tasks!",
+  "mobilePage": {
+    "quote": "Suloke was tasked by Arbonaut with a challenging full-stack development: an application integrating satellite and crowdsourced wildfire data, with mobile and web portals. Suloke's skilled experts undertook the task with vigour, skilfully and independently delivering a comprehensive app. I am highly impressed with the outcome and happily recommend Suloke for demanding development tasks!",
     "title": "MOBILE DEVELOPMENT",
     "text1": "Suloke offers over a decade of experience in mobile app development, with a special emphasis on crowdsourcing and map-integration. We know that understanding the customers needs is key to successful app development. We work by collaborative design, integrating stakeholders into the planning process from the get-go. And whatever the plan, our experienced project management can weave the technology in to the shape you need.",
     "h2OurProcess": "OUR PROCESS",
@@ -57,6 +57,20 @@
     "contentText5": "The ready app will be subjected to User Acceptance Testing, making sure the site adheres to the requirements set with the customer during Discovery and Design. Deployment of the ready, tested and approved app will go through Google Play Store for Android; Apple Store for iOS; Appcenter or similar for internal artefact distribution. Other avenues of deployment are possible.",
     "contentTitle6": "MAINTENANCE",
     "contentText6": "During post-deployment, we use tools such as Firebase Crashlytics to pinpoint and fix issues with stability. We also use performance tools, like Firebase Performance Analytics, to ensure the app runs smoothly. We can collect additional usage data on how users use the application, to further evaluate how well it fits customer needs and what features are lacking to further develop the application. We are able to collect behavioral data, usage engagement, feedback and technical data."
+  },
+  "contactPage": {
+    "addContact": "Add Me to Phone Book",
+    "email": "Email",
+    "wechat": "WeChat",
+    "linkedin": "LinkedIn",
+    "close": "Close",
+    "copyWechatId": "Copy WeChat ID",
+    "goToWechat": "Go to WeChat",
+    "sendEmail": "Write an email",
+    "copyEmail": "Copy Email",
+    "copied": "Copied!",
+    "copyWhatsApp": "Copy Number",
+    "openWhatsApp": "Open WhatsApp"
   },
   "privacyPolicy": {
     "title1": "Privacy Policy",

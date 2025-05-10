@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ContactCard = ({ color, dict }) => {
   return (
-    <div className={`flex flex-cols rounded-lg border-box w-auto ${color}`}>
+    <div className={`flex rounded-lg border-box w-auto ${color}`}>
       <div className="w-48">
         <Image
           className="h-full rounded-l-lg border-box"
