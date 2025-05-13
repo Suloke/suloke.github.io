@@ -84,10 +84,11 @@ const ContactCard = ({ color, dict, lang }) => {
         </button>
       </div>
       <Link
-        className="absolute bottom-4 right-4 flex flex-row items-center cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out"
+        className="absolute bottom-2 right-2 flex flex-row items-center cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out sm:bottom-4 sm:right-4"
         href={`/${lang}/contact`}
       >
         <Image
+          className="w-[40px] h-[40px] sm:w-[32px] sm:h-[32px]"
           src={"/right-arrow.svg"}
           height={32}
           width={32}

@@ -6,13 +6,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { i18n } from "@/i18n-config";
 
-export default function LinksButtons({ dict, lang }) {
+export default function LinksButtons({ dict, lang, contactData }) {
   const [showModal, setShowModal] = useState(false);
   const [showWechatCopied, setShowWechatCopied] = useState(false);
   const [showEmailMenu, setShowEmailMenu] = useState(false);
   const [showEmailCopied, setShowEmailCopied] = useState(false);
   const [showWhatsAppMenu, setShowWhatsAppMenu] = useState(false);
   const [showWhatsAppCopied, setShowWhatsAppCopied] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const emailMenuRef = useRef(null);
   const emailButtonRef = useRef(null);
   const whatsAppMenuRef = useRef(null);
@@ -44,7 +45,7 @@ export default function LinksButtons({ dict, lang }) {
   };
 
   const copyWechatId = () => {
-    navigator.clipboard.writeText("wxid_sl24l0twv23l12");
+    navigator.clipboard.writeText(contactData.weChatId);
     setShowWechatCopied(true);
     setTimeout(() => {
       setShowWechatCopied(false);
@@ -52,7 +53,7 @@ export default function LinksButtons({ dict, lang }) {
   };
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("contact@suloke.com");
+    navigator.clipboard.writeText(contactData.email);
     setShowEmailCopied(true);
     setTimeout(() => {
       setShowEmailCopied(false);
@@ -60,12 +61,30 @@ export default function LinksButtons({ dict, lang }) {
   };
 
   const copyWhatsApp = () => {
-    navigator.clipboard.writeText("+358449999618");
+    navigator.clipboard.writeText(contactData.phone);
     setShowWhatsAppCopied(true);
     setTimeout(() => {
       setShowWhatsAppCopied(false);
     }, 1000);
   };
+
+  useEffect(() => {
+    const checkDevice = () => {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isMobileDevice =
+        /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
+          userAgent
+        );
+      setIsMobile(isMobileDevice);
+    };
+
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+
+    return () => {
+      window.removeEventListener("resize", checkDevice);
+    };
+  }, []);
 
   // Обработчик клика вне меню
   useEffect(() => {
@@ -109,7 +128,7 @@ export default function LinksButtons({ dict, lang }) {
             <div className="max-h-[40vh] w-full flex items-center justify-center">
               <Image
                 className="rounded-lg border-box"
-                src="/wechat-qr.jpg"
+                src={contactData.weChatQR}
                 alt="WeChat QR Code"
                 width={400}
                 height={400}
@@ -134,13 +153,22 @@ export default function LinksButtons({ dict, lang }) {
                   </div>
                 )}
               </button>
-              <Link
-                href="https://u.wechat.com/kKWx6fzss6pBd-E48xusFxg?s=2"
-                target="_blank"
-                className="bg-[#5CC928] p-2 rounded-lg flex items-center justify-center"
-              >
-                <p className="text-sm text-center">{dict.goToWechat}</p>
-              </Link>
+              {isMobile ? (
+                <a
+                  href={`weixin://dl/business/?t=${contactData.weChatId}`}
+                  className="bg-[#5CC928] p-2 rounded-lg flex items-center justify-center"
+                >
+                  <p className="text-sm text-center">{dict.goToWechat}</p>
+                </a>
+              ) : (
+                <Link
+                  href={contactData.weChatLink}
+                  target="_blank"
+                  className="bg-[#5CC928] p-2 rounded-lg flex items-center justify-center"
+                >
+                  <p className="text-sm text-center">{dict.goToWechat}</p>
+                </Link>
+              )}
             </div>
           </div>
           <button
@@ -199,7 +227,7 @@ export default function LinksButtons({ dict, lang }) {
             }`}
           >
             <Link
-              href="https://wa.me/+358449999618"
+              href={contactData.whatsAppLink}
               target="_blank"
               className="flex items-center gap-x-2 px-4 py-2 hover:bg-suloke-grey/20 transition-colors duration-200"
               onClick={() => setShowWhatsAppMenu(false)}
@@ -221,7 +249,7 @@ export default function LinksButtons({ dict, lang }) {
         </div>
         <Link
           className="flex flex-row gap-x-2 rounded-lg border-box bg-suloke-grey p-2 items-center justify-center w-full sm:w-1/2 h-[48px] hover:bg-suloke-magenta transition-bg duration-300 ease-in-out"
-          href="https://www.linkedin.com/in/samuli-kujala-66a60922a/"
+          href={contactData.linkedInLink}
           target="_blank"
         >
           <Image
@@ -237,22 +265,28 @@ export default function LinksButtons({ dict, lang }) {
         </Link>
       </div>
       <div className="flex flex-col gap-2 w-full sm:flex-row">
-        <button
-          className="flex flex-row gap-x-2 rounded-lg border-box bg-suloke-grey p-2 items-center justify-center w-full sm:w-1/2 h-[48px] hover:bg-suloke-magenta transition-bg duration-300 ease-in-out"
-          onClick={() => setShowModal(true)}
+        {contactData?.weChatId && (
+          <button
+            className="flex flex-row gap-x-2 rounded-lg border-box bg-suloke-grey p-2 items-center justify-center w-full sm:w-1/2 h-[48px] hover:bg-suloke-magenta transition-bg duration-300 ease-in-out"
+            onClick={() => setShowModal(true)}
+          >
+            <Image
+              src={"/wechat.png"}
+              height={20}
+              width={20}
+              style={{
+                objectFit: "contain",
+              }}
+              alt="phone-icon"
+            />
+            <h3 className="text-lg">{dict.wechat}</h3>
+          </button>
+        )}
+        <div
+          className={`flex relative w-full ${
+            !contactData?.weChatId ? "sm:w-full" : "sm:w-1/2"
+          }`}
         >
-          <Image
-            src={"/wechat.png"}
-            height={20}
-            width={20}
-            style={{
-              objectFit: "contain",
-            }}
-            alt="phone-icon"
-          />
-          <h3 className="text-lg">{dict.wechat}</h3>
-        </button>
-        <div className="flex relative w-full sm:w-1/2">
           <button
             ref={emailButtonRef}
             className="flex flex-row gap-x-2 rounded-lg border-box bg-suloke-grey p-2 items-center justify-center w-full h-[48px] hover:bg-suloke-magenta transition-bg duration-300 ease-in-out"
@@ -278,7 +312,7 @@ export default function LinksButtons({ dict, lang }) {
             }`}
           >
             <Link
-              href="mailto:contact@suloke.com"
+              href={contactData.emailLink}
               className="flex items-center gap-x-2 px-4 py-2 hover:bg-suloke-grey/20 transition-colors duration-200"
               onClick={() => setShowEmailMenu(false)}
             >
@@ -298,23 +332,25 @@ export default function LinksButtons({ dict, lang }) {
           </div>
         </div>
       </div>
-      <Link
-        href="/Samuli_Kujala.vcf"
-        download="Samuli_Kujala.vcf"
-        className="flex flex-row gap-x-2 rounded-lg border-box bg-suloke-grey p-2 items-center justify-center w-full h-[48px] hover:bg-suloke-magenta transition-bg duration-300 ease-in-out"
-      >
-        <Image
-          className="h-full"
-          src={"/phone-book.png"}
-          height={32}
-          width={20}
-          style={{
-            objectFit: "contain",
-          }}
-          alt="phone-icon"
-        />
-        <h3 className="text-lg">{dict.addContact}</h3>
-      </Link>
+      {isMobile && (
+        <Link
+          href={contactData.vcfLink}
+          download={contactData.vcfFileName}
+          className="flex flex-row gap-x-2 rounded-lg border-box bg-suloke-grey p-2 items-center justify-center w-full h-[48px] hover:bg-suloke-magenta transition-bg duration-300 ease-in-out"
+        >
+          <Image
+            className="h-full"
+            src={"/phone-book.png"}
+            height={32}
+            width={20}
+            style={{
+              objectFit: "contain",
+            }}
+            alt="phone-icon"
+          />
+          <h3 className="text-lg">{dict.addContact}</h3>
+        </Link>
+      )}
       {showModal && <ModalWindow />}
     </div>
   );

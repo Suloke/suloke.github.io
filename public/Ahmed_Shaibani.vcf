@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Ahmed Shaibani
+N:Shaibani;Ahmed;;;
+EMAIL;type=WORK,INTERNET:ahmed.shaibani@suloke.com
+TEL;TYPE=WORK,VOICE:+36 30 147 5605
+TITLE:CTO
+URL:https://www.suloke.com
+X-SOCIALPROFILE;TYPE=Linkedin:https://www.linkedin.com/in/ahmedalshaibani/
+ORG:Suloke OY
+END:VCARD
