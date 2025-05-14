@@ -144,7 +144,7 @@ export default function LinksButtons({ dict, lang, contactData }) {
             <div className="flex flex-col w-full justify-between gap-2 sm:flex-row 2xl:w-[80%]">
               <button
                 onClick={copyWechatId}
-                className="bg-suloke-cyan p-2 rounded-lg flex items-center justify-center relative hover:bg-suloke-cyan/80 transition-colors duration-300 ease-in-out"
+                className="bg-suloke-cyan p-2 rounded-lg flex items-center justify-center relative active:scale-95 transition duration-300 ease-in-out hover:bg-suloke-cyan/80"
               >
                 <p className="text-sm">{dict.copyWechatId}</p>
                 {showWechatCopied && (
@@ -155,8 +155,8 @@ export default function LinksButtons({ dict, lang, contactData }) {
               </button>
               {isMobile ? (
                 <a
-                  href={`weixin://dl/business/?t=${contactData.weChatId}`}
-                  className="bg-[#5CC928] p-2 rounded-lg flex items-center justify-center hover:bg-[#5CC92880] transition-colors duration-300 ease-in-out"
+                  href={`weixin://dl/chat?${contactData.weChatId}`}
+                  className="bg-[#5CC928] p-2 rounded-lg flex items-center justify-center active:scale-95 hover:bg-[#5CC92880] transition-colors duration-300 ease-in-out"
                 >
                   <p className="text-sm text-center">{dict.goToWechat}</p>
                 </a>
@@ -164,7 +164,7 @@ export default function LinksButtons({ dict, lang, contactData }) {
                 <Link
                   href={contactData.weChatLink}
                   target="_blank"
-                  className="bg-[#5CC928] p-2 rounded-lg flex items-center justify-center hover:bg-[#5CC92880] transition-colors duration-300 ease-in-out"
+                  className="bg-[#5CC928] p-2 rounded-lg flex items-center justify-center active:scale-95 hover:bg-[#5CC92880] transition-colors duration-300 ease-in-out"
                 >
                   <p className="text-sm text-center">{dict.goToWechat}</p>
                 </Link>
@@ -173,7 +173,7 @@ export default function LinksButtons({ dict, lang, contactData }) {
           </div>
           <button
             onClick={() => setShowModal(false)}
-            className="absolute top-2 right-2 bg-suloke-grey p-2 rounded-lg hover:bg-suloke-grey/80 transition-colors duration-300 ease-in-out"
+            className="absolute top-2 right-2 bg-suloke-grey p-2 rounded-lg active:scale-95 hover:bg-suloke-grey/80 transition-colors duration-300 ease-in-out"
           >
             <p className="text-xs">{dict.close}</p>
           </button>

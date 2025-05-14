@@ -31,7 +31,7 @@ const Footer = ({ lang }) => {
           onClick={() => {
             navigator.clipboard.writeText("+358 44 99 99 618");
           }}
-          className="flex flex-row gap-x-2 justify-center"
+          className="flex flex-row gap-x-2 justify-center active:scale-95 transition duration-300 ease-in-out"
         >
           <div className="flex w-4 h-4">
             <Image
@@ -48,7 +48,7 @@ const Footer = ({ lang }) => {
           onClick={() => {
             navigator.clipboard.writeText("contact@suloke.com");
           }}
-          className="flex flex-row gap-x-2 justify-center"
+          className="flex flex-row gap-x-2 justify-center active:scale-95 transition duration-300 ease-in-out"
         >
           <div className="flex w-4 h-4">
             <Image
