@@ -12,13 +12,13 @@ const Page = async (props) => {
   const dict = await getDictionary(lang);
 
   const contactData = {
-    phone: "",
+    phone: "+358465519196",
     weChatId: null,
     weChatQR: null,
     weChatLink: null,
     email: "sowrov.doha@suloke.com",
     emailLink: "mailto:sowrov.doha@suloke.com",
-    whatsAppLink: "https://wa.me/",
+    whatsAppLink: "https://wa.me/+358465519196",
     linkedInLink: "https://www.linkedin.com/in/sowrov-d-74a8a0140/",
     vcfLink: "/Sowrov_Doha.vcf",
     vcfFileName: "Sowrov_Doha.vcf",
