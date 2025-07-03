@@ -24,6 +24,7 @@ export default function LinksButtons({ dict, lang, contactData }) {
   const localeList = {
     en: "English",
     zh: "中文",
+    ar: "العربيّة",
   };
 
   const redirectedPathname = (locale) => {

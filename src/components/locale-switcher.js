@@ -13,6 +13,7 @@ export default function LocaleSwitcher() {
   const localeList = {
     en: "English",
     zh: "中文",
+    ar: "العربيّة",
   };
 
   const redirectedPathname = (locale) => {
