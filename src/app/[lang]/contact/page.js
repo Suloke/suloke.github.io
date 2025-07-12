@@ -30,7 +30,7 @@ const Page = async (props) => {
         <div className="flex rounded-lg border-box w-auto bg-suloke-grey">
           <div className="w-32 h-48">
             <Image
-              className="h-full rounded-l-lg border-box"
+              className="h-full ltr:rounded-l-lg rtl:rounded-r-lg border-box"
               src={"/Photos/samuli-478-882.png"}
               width={400}
               height={400}

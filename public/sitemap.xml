@@ -2,45 +2,150 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>https://suloke.com/</loc>
-      <lastmod>2025-05-13T16:08:12.118Z</lastmod>
+      <loc>https://suloke.com/en/</loc>
+      <lastmod>2025-07-12T11:38:19.311Z</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
     </url>
   
     <url>
-      <loc>https://suloke.com/web</loc>
-      <lastmod>2025-05-13T16:08:12.119Z</lastmod>
+      <loc>https://suloke.com/en/web</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://suloke.com/backend</loc>
-      <lastmod>2025-05-13T16:08:12.119Z</lastmod>
+      <loc>https://suloke.com/en/mobile</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://suloke.com/mobile</loc>
-      <lastmod>2025-05-13T16:08:12.119Z</lastmod>
+      <loc>https://suloke.com/en/contact</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://suloke.com/contact</loc>
-      <lastmod>2025-05-13T16:08:12.119Z</lastmod>
+      <loc>https://suloke.com/en/privacy-policy</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
   
     <url>
-      <loc>https://suloke.com/privacy-policy</loc>
-      <lastmod>2025-05-13T16:08:12.119Z</lastmod>
+      <loc>https://suloke.com/en/ahmed</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/en/sowrov</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/zh/</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/zh/web</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/zh/mobile</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/zh/contact</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/zh/privacy-policy</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/zh/ahmed</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/zh/sowrov</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/ar/</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/ar/web</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/ar/mobile</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/ar/contact</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/ar/privacy-policy</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/ar/ahmed</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+    </url>
+  
+    <url>
+      <loc>https://suloke.com/ar/sowrov</loc>
+      <lastmod>2025-07-12T11:38:19.312Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
     </url>
   
 </urlset>

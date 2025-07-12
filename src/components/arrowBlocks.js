@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 
-const ArrowBlocks = ({ content }) => {
+const ArrowBlocks = ({ lang, content }) => {
   const blockRefs = useRef([]);
   const arrowRefs = useRef([]);
 
@@ -20,7 +20,11 @@ const ArrowBlocks = ({ content }) => {
               1,
               Math.max(0, (windowHeight - rect.top) / windowHeight)
             );
-            arrow.style.transform = `translate3d(${visibleRatio * 70}%, 0, 0)`;
+
+            const isRTL = lang === "ar";
+            const translateX = isRTL ? -(visibleRatio * 70) : visibleRatio * 70;
+
+            arrow.style.transform = `translate3d(${translateX}%, 0, 0)`;
           }
         }
       });
@@ -80,7 +84,7 @@ const ArrowBlocks = ({ content }) => {
           {index < content.text.length - 1 && (
             <div
               ref={(el) => (arrowRefs.current[index] = el)}
-              className="flex items-end justify-start ml-2 mb-2 arrow will-change-transform"
+              className="flex items-end justify-start ltr:ml-2 rtl:mr-2 mb-2 arrow will-change-transform"
             >
               <Image
                 src={content.settings.src}

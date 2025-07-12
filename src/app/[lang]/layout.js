@@ -10,10 +10,10 @@ export default async function RootLayout({ params, children }) {
   const { lang } = await params;
 
   return (
-    <>
+    <div dir={lang === "ar" ? "rtl" : "ltr"}>
       <Header lang={lang} />
       <main className="flex-1">{children}</main>
       <Footer lang={lang} />
-    </>
+    </div>
   );
 }

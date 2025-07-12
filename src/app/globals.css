@@ -42,6 +42,17 @@
   }
 }
 
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @keyframes fadeInAndMove {
   from {
     opacity: 0;
@@ -157,4 +168,104 @@ li,
 .animate-fade-in-and-move {
   opacity: 0;
   animation: fadeInAndMove 0.6s ease-out forwards;
+}
+
+/* RTL Support Styles */
+[dir="rtl"] .animate-slide-in-from-left {
+  animation: slideInFromRight 0.6s ease-out forwards;
+}
+
+[dir="ltr"] .animate-slide-in-from-left {
+  animation: slideInFromLeft 0.6s ease-out forwards;
+}
+
+/* RTL Typography adjustments */
+[dir="rtl"] h1,
+[dir="rtl"] .h1,
+[dir="rtl"] h2,
+[dir="rtl"] .h2,
+[dir="rtl"] h3,
+[dir="rtl"] .h3,
+[dir="rtl"] h4,
+[dir="rtl"] .h4 {
+  text-align: right;
+}
+
+[dir="rtl"] p,
+[dir="rtl"] .p,
+[dir="rtl"] li,
+[dir="rtl"] .li {
+  text-align: right;
+}
+
+/* RTL Flex and positioning adjustments */
+/* [dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+} */
+
+[dir="rtl"] .gap-x-6 > * + * {
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+[dir="rtl"] .gap-x-4 > * + * {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .gap-x-2 > * + * {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+/* RTL Arrow and icon adjustments */
+[dir="rtl"] .arrow {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .rotate-45 {
+  transform: rotate(-45deg);
+}
+
+/* RTL Dropdown adjustments */
+[dir="rtl"] .absolute.right-0 {
+  right: auto;
+  left: 0;
+}
+
+[dir="rtl"] .absolute.right-2 {
+  right: auto;
+  left: 2rem;
+}
+
+[dir="rtl"] .origin-top-right {
+  transform-origin: top left;
+}
+
+/* RTL specific utility classes */
+.rtl-hidden {
+  display: none;
+}
+
+[dir="rtl"] .rtl-hidden {
+  display: block;
+}
+
+[dir="rtl"] .ltr-hidden {
+  display: none;
+}
+
+.ltr-hidden {
+  display: block;
+}
+
+/* RTL text alignment for centered content */
+[dir="rtl"] .text-center {
+  text-align: center;
+}
+
+/* RTL support for custom positioning */
+[dir="rtl"] .right-\[-20px\] {
+  right: auto;
+  left: -20px;
 }

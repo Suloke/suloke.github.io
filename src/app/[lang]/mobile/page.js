@@ -144,7 +144,7 @@ const page = async (props) => {
           {" "}
           {/* flowboxes */}
           <h2 className="mb-7">{mobilePage.processTitle}</h2>
-          <ArrowBlocks content={content} />
+          <ArrowBlocks lang={lang} content={content} />
           {/* <div className="flex flex-col bg-suloke-cyanlight w-full h-auto rounded-lg p-6 box-border">
             <h3 className="text-xl">DISCOVERY</h3>
             <p className="px-2 pt-2">

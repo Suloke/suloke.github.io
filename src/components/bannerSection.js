@@ -28,7 +28,7 @@ const BannerSection = ({ lang, dictionary }) => {
   ];
 
   return (
-    <div className="flex flex-row w-full relative items-center justify-center gap-x-40 pr-20 pt-20 pb-40">
+    <div className="flex flex-row w-full relative items-center justify-center gap-x-40 ltr:pr-20 rtl:pl-20 pt-20 pb-40">
       <div className="flex w-full flex-col gap-y-5 items-center">
         {" "}
         {/* Banner */}
@@ -51,6 +51,7 @@ const BannerSection = ({ lang, dictionary }) => {
             filter brightness-125 transition-all duration-300 ease-in-out
             hover:brightness-150"
           style={{
+            transform: lang === "ar" ? "scaleX(-1)" : "scaleX(1)",
             filter: `drop-shadow(0 0 15px ${
               competencies[cardHoveredIndex].color || "#A3004C"
             }20)`,

@@ -11,7 +11,7 @@ const ContactCard = ({ color, dict, lang }) => {
     <div className={`flex rounded-lg border-box w-auto ${color} relative`}>
       <div className="w-48">
         <Image
-          className="h-full rounded-l-lg border-box"
+          className="h-full ltr:rounded-l-lg rtl:rounded-r-lg border-box"
           src={"/Photos/samuli-478-882.png"}
           width={400}
           height={400}
@@ -84,7 +84,7 @@ const ContactCard = ({ color, dict, lang }) => {
         </button>
       </div>
       <Link
-        className="absolute bottom-2 right-2 flex flex-row items-center cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out sm:bottom-4 sm:right-4"
+        className="absolute bottom-2 right-2 flex flex-row items-center cursor-pointer hover:scale-110 transition-transform duration-300 ease-in-out sm:bottom-4 sm:right-4 rtl:rotate-180"
         href={`/${lang}/contact`}
       >
         <Image
