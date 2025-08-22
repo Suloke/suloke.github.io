@@ -82,7 +82,7 @@ const TeamCard = ({
           className={`transition-opacity rounded-lg duration-300 overflow-hidden p-5 mt-4 
               ${
                 isExpanded
-                  ? "opacity-100 bg-suloke-black/70 lg:delay-200"
+                  ? "opacity-100 bg-suloke-black/80 lg:delay-200"
                   : "opacity-10 lg:opacity-0 lg:delay-0 lg:duration-0"
               }`}
         >
