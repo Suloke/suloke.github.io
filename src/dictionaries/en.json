@@ -10,7 +10,8 @@
   "bannerSection": {
     "web": "WEB DEV",
     "mobile": "MOBILE DEV",
-    "backend": "BACKEND"
+    "backend": "BACKEND",
+    "demo": "DEMO"
   },
   "teamSection": {
     "title": "THE CORE TEAM",

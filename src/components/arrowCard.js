@@ -1,5 +1,15 @@
 import Link from "next/link";
 
+const isValidUrl = urlString=> {
+      var urlPattern = new RegExp('^(https?:\\/\\/)?'+ // validate protocol
+    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // validate domain name
+    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // validate OR ip (v4) address
+    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // validate port and path
+    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // validate query string
+    '(\\#[-a-z\\d_]*)?$','i'); // validate fragment locator
+  return !!urlPattern.test(urlString);
+}
+
 const ArrowCard = ({
   text,
   target,
@@ -8,10 +18,18 @@ const ArrowCard = ({
   color,
   lang,
 }) => {
+
+  let url
+  if (isValidUrl(target) === true){
+      url = target
+  } else {
+    url = `/${lang}/${target}`
+  }
+
   return (
     <Link
       className={`min-w-[200px] w-full max-w-[300px] rounded-lg`}
-      href={`/${lang}/${target}`}
+      href={url}
       onMouseEnter={() => setCardHoveredIndex(index)}
       onMouseLeave={() => setCardHoveredIndex(null)}
     >

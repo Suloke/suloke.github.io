@@ -10,7 +10,8 @@
   "bannerSection": {
     "web": "網頁開發",
     "mobile": "手機應用程式開發",
-    "backend": "後端開發"
+    "backend": "後端開發",
+    "demo": "演示"
   },
   "teamSection": {
     "title": "核心團隊",

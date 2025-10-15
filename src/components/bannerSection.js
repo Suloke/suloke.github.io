@@ -24,7 +24,9 @@ const BannerSection = ({ lang, dictionary }) => {
       icon: "/phone.svg",
       color: "#095E5E",
     },
-    // { text: dictionary.backend, imageSrc: "/more-arrow.svg", altText: "Yellow Arrow", target: "backend", icon: "/backend.svg", color: "#8C6C00" },
+    { text: dictionary.demo, imageSrc: "/more-arrow.svg", altText: "Yellow Arrow", target: "https://dev.suloke.com", icon: "/backend.svg", color: "#8C6C00" },
+
+        // { text: dictionary.backend, imageSrc: "/more-arrow.svg", altText: "Yellow Arrow", target: "https://dev.suloke.com", icon: "/backend.svg", color: "#8C6C00" },
   ];
 
   return (

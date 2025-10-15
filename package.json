@@ -13,7 +13,7 @@
     "@formatjs/intl-localematcher": "0.5.7",
     "clipboard": "^2.0.11",
     "negotiator": "1.0.0",
-    "next": "15.0.3",
+    "next": "^15.5.5",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
     "server-only": "0.0.1",
