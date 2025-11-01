@@ -30,7 +30,7 @@ const TeamSection = ({ dictionary }) => {
       fullName: "Samuli Kujala",
       position: "CEO — Design lead",
       description: dictionary.samuliDesc,
-      bgColor: ["#090d10", "#080c0f", "#07080a"],
+      bgColor: ["#1a1d22", "#1a1f23", "#16191e"],
       skills:
         "FIGMA  NEXT.JS  REACT  UI-DESIGN  UX-DESIGN  PYTHON  CSS  TAILWIND  GRAPHIC-DESIGN",
     },
