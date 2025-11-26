@@ -20,6 +20,8 @@ module.exports = {
         "suloke-cyanlight": "#046A6A",
         "suloke-yellow": "#8C6C00",
         "suloke-yellowlight": "#947201",
+        "suloke-orange": "#A32600",
+        "suloke-orangelight": "#B42A01"
       },
       typography: (theme) => ({
         suloke: {

@@ -11,7 +11,8 @@
     "web": "WEB DEV",
     "mobile": "MOBILE DEV",
     "backend": "BACKEND",
-    "demo": "DEMO"
+    "demo": "DEMO",
+    "aiPage": "AI"
   },
   "teamSection": {
     "title": "THE CORE TEAM",
@@ -45,6 +46,23 @@
     "quote": "Suloke was tasked by Arbonaut with a challenging full-stack development: an application integrating satellite and crowdsourced wildfire data, with mobile and web portals. Suloke's skilled experts undertook the task with vigour, skilfully and independently delivering a comprehensive app. I am highly impressed with the outcome and happily recommend Suloke for demanding development tasks!",
     "title": "MOBILE DEVELOPMENT",
     "text1": "Suloke offers over a decade of experience in mobile app development, with a special emphasis on crowdsourcing and map-integration. We know that understanding the customers needs is key to successful app development. We work by collaborative design, integrating stakeholders into the planning process from the get-go. And whatever the plan, our experienced project management can weave the technology in to the shape you need.",
+    "h2OurProcess": "OUR PROCESS",
+    "contentTitle1": "DISCOVERY",
+    "contentText1": "We start by mapping out your business needs, target audience and goals for the project. We go through the options; best practices and integrations of technologies for your individual business case. An important goal of discovery is creating a working relationship with you, and to find out what we can do for you. The result of discovery is a mutually created set of requirements, that paints a clear picture of what we are building.",
+    "contentTitle2": "PLANNING",
+    "contentText2": "Once requirements are clear, the next step is to map out the required features for MVP (minimum viable product), as well as the technologies to be used. This tech stack might be between native solutions, cross-platform solutions or PWA-type web applications. During planning we outline major UI-components and integrations, as well as necessary compliance- and security guidelines.",
+    "contentTitle3": "DESIGN",
+    "contentText3": "Once required features, workflows and the tech stack are identified, we create an interactive prototype in collaboration with you. With it, we are able to visualize and test the User Interface with you and all relevant stakeholders; we introduce Usability Testing for more personalized UI-solutions. During this process we will use platform-specific guidelines: Material Design for Android and Human Interface Guidelines for iOS. These guidelines offload developer time and allow the UI and UX that users are accustomed to.",
+    "contentTitle4": "IMPLEMENTATION",
+    "contentText4": "With a ready and tested prototype of the application as the guide, we begin development. We use Swift for iOS, Kotlin for Android, React Native and Flutter for cross-platform. For testing we use Appium and Espresson for the User Interface; Github Actions for CI/CD pipelines. The app will be constructed using Clean Architecture, ensuring ease of maintenance and further development down the line.",
+    "contentTitle5": "DEPLOYMENT",
+    "contentText5": "The ready app will be subjected to User Acceptance Testing, making sure the site adheres to the requirements set with the customer during Discovery and Design. Deployment of the ready, tested and approved app will go through Google Play Store for Android; Apple Store for iOS; Appcenter or similar for internal artefact distribution. Other avenues of deployment are possible.",
+    "contentTitle6": "MAINTENANCE",
+    "contentText6": "During post-deployment, we use tools such as Firebase Crashlytics to pinpoint and fix issues with stability. We also use performance tools, like Firebase Performance Analytics, to ensure the app runs smoothly. We can collect additional usage data on how users use the application, to further evaluate how well it fits customer needs and what features are lacking to further develop the application. We are able to collect behavioral data, usage engagement, feedback and technical data."
+  },
+  "aiPage": {
+    "title": "AI",
+    "text1": "We believe in leveraging AI responsibly, focusing on delivering measurable and durable Return on Investment. Starting from a baseline analysis of your operations and business needs, we design and build optimal AI-solutions that provide real, actionable value to your bottom line.\nOur team is dedicated to creating sustainable solutions that bring real life value to our customers, presenting to you a communicative and flexible partner in the future-proofing your operations.",
     "h2OurProcess": "OUR PROCESS",
     "contentTitle1": "DISCOVERY",
     "contentText1": "We start by mapping out your business needs, target audience and goals for the project. We go through the options; best practices and integrations of technologies for your individual business case. An important goal of discovery is creating a working relationship with you, and to find out what we can do for you. The result of discovery is a mutually created set of requirements, that paints a clear picture of what we are building.",

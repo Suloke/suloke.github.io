@@ -3,9 +3,12 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 
+
 const ArrowBlocks = ({ lang, content }) => {
   const blockRefs = useRef([]);
   const arrowRefs = useRef([]);
+const hasSrc =
+  content.settings.src && content.settings.src.trim() !== "";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -86,12 +89,18 @@ const ArrowBlocks = ({ lang, content }) => {
               ref={(el) => (arrowRefs.current[index] = el)}
               className="flex items-end justify-start ltr:ml-2 rtl:mr-2 mb-2 arrow will-change-transform"
             >
-              <Image
-                src={content.settings.src}
-                height={50}
-                width={100}
-                alt="flowboxarrow"
-              />
+  {hasSrc ? (
+    <Image
+      src={content.settings.src}
+      height={50}
+      width={100}
+      alt="flowboxarrow"
+    />
+  ) : (
+    // Spacer with same vertical size/padding as the arrow image
+    <div style={{ height: 50 /* or paddingBottom: 50 */ }} />
+  )}
+
             </div>
           )}
         </div>
