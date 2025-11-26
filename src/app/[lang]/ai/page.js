@@ -58,16 +58,13 @@ const page = async (props) => {
           {" "}
           {/* Intro */}
           <h1 className="text-center pb-6 lg:mb-8">{aiPage.title}</h1>
-          <p className="">{aiPage.text1}</p>
-          <p className="">{aiPage.text2}</p>
-          <p className="">{aiPage.text3}</p>
-          <p className="">{aiPage.text4}</p>
+          <p className="whitespace-pre-line">{aiPage.text1}</p>
         </div>
         <div className="flex flex-col w-full items-center pt-14 md:pt-20">
           {" "}
           {/* flowboxes */}
           <h2 className="mb-7">{aiPage.processTitle}</h2>
-          <ArrowBlocks lang={lang} content={content}/>
+          <ArrowBlocks lang={lang} content={content} showImmediately={true}/>
         </div>
         <h2 className="mb-8 pt-14 md:pt-20">{aiPage.h2WeAreFluentIn}</h2>
         <div className="flex flex-row pt-14 md:pt-20 justify-center">
