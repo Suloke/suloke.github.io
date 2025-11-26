@@ -29,7 +29,7 @@ const BannerSection = ({ lang, dictionary }) => {
       imageSrc: "/ai-page-arrow.svg",
       altText: "Ornage Arrow",
       target: "ai",
-      icon: "/phone.svg",
+      icon: "/ai.svg",
       color: "#A32600",
     },
     {

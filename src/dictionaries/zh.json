@@ -57,7 +57,8 @@
     "contentTitle5": "配置階段",
     "contentText5": "完成的應用程式將進行用戶驗收測試，確保應用程式符合在發現階段和設計階段與客戶共同確定的需求。已測試並批准的應用程式將通過 Google Play Store（Android）、Apple Store（iOS）、Appcenter 或類似平台進行內部發佈。其他部署渠道也是可行的。",
     "contentTitle6": "保養階段",
-    "contentText6": "在部署後，我們使用 Firebase Crashlytics 等工具來定位和修復穩定性問題。我們還使用性能工具，如 Firebase Performance Monitoring，來確保應用程式運行順暢。我們可以收集有關用戶如何使用應用程式的更多數據，以進一步評估其是否符合客戶需求，並了解哪些功能不足，或需要進一步開發應用程式。我們可以收集行為數據、使用互動、反饋和技術數據。"
+    "contentText6": "在部署後，我們使用 Firebase Crashlytics 等工具來定位和修復穩定性問題。我們還使用性能工具，如 Firebase Performance Monitoring，來確保應用程式運行順暢。我們可以收集有關用戶如何使用應用程式的更多數據，以進一步評估其是否符合客戶需求，並了解哪些功能不足，或需要進一步開發應用程式。我們可以收集行為數據、使用互動、反饋和技術數據。",
+    "h2WeAreFluentIn": "我們熟悉"
   },
   "contactPage": {
     "addContact": "将我添加到通讯录",

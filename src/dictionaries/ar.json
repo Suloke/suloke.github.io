@@ -57,7 +57,8 @@
     "contentTitle5": "النشر",
     "contentText5": "نُجري اختبارات قبول المستخدم. يتم نشر التطبيق عبر Google Play للأندرويد وApple Store للآيفون أو عبر Appcenter. يمكن أيضًا اختيار طرق نشر أخرى حسب الحاجة.",
     "contentTitle6": "الصيانة",
-    "contentText6": "بعد النشر، نستخدم أدوات مثل Firebase Crashlytics لرصد المشكلات، وFirebase Performance لتحليل الأداء. يمكننا جمع بيانات الاستخدام وتحليل السلوك لتحديد الميزات المطلوبة وتطوير التطبيق بشكل أفضل."
+    "contentText6": "بعد النشر، نستخدم أدوات مثل Firebase Crashlytics لرصد المشكلات، وFirebase Performance لتحليل الأداء. يمكننا جمع بيانات الاستخدام وتحليل السلوك لتحديد الميزات المطلوبة وتطوير التطبيق بشكل أفضل.",
+    "h2WeAreFluentIn": "نحن نتقن..."
   },
   "contactPage": {
     "addContact": "Add Me to Phone Book",

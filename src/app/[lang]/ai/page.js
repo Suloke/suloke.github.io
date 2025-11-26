@@ -1,7 +1,6 @@
 import TechStack from "@/components/techStack";
 import { generateMetaData } from "@/utils/metaData";
 import ContactCard from "@/components/contactCard";
-import CollabQuote from "@/components/collabQuote";
 import ArrowBlocks from "@/components/arrowBlocks";
 import { getDictionary } from "@/get-dictionary";
 
@@ -68,7 +67,7 @@ const page = async (props) => {
           {" "}
           {/* flowboxes */}
           <h2 className="mb-7">{aiPage.processTitle}</h2>
-          <ArrowBlocks lang={lang} content={content} className=""/>
+          <ArrowBlocks lang={lang} content={content}/>
         </div>
 
         <div className="flex flex-row pt-14 md:pt-20 justify-center">
