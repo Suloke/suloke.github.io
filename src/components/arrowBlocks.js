@@ -82,7 +82,7 @@ const hasSrc =
             className={`flex flex-col ${content.settings.color} w-full h-auto rounded-lg p-6 box-border`}
           >
             <h3 className="text-xl">{item.title}</h3>
-            <p className="px-2 pt-2">{item.text}</p>
+            <p className="px-2 pt-2 whitespace-pre-line">{item.text}</p>
           </div>
           {index < content.text.length - 1 && (
             <div

@@ -63,7 +63,7 @@ const BannerSection = ({ lang, dictionary }) => {
       {cardHoveredIndex !== null && (
         <Image
           // className="absolute top-[-40px] right-0 xl:right-20 2xl:right-40"
-          className="absolute top-[-35px] right-0 xl:right-20 2xl:right-40 
+          className="absolute top-[60px] right-0 xl:right-20 2xl:right-40 
             filter brightness-125 transition-all duration-300 ease-in-out
             hover:brightness-150"
           style={{
