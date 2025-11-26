@@ -69,7 +69,7 @@ const page = async (props) => {
           <h2 className="mb-7">{aiPage.processTitle}</h2>
           <ArrowBlocks lang={lang} content={content}/>
         </div>
-
+        <h2 className="mb-8 pt-14 md:pt-20">{aiPage.h2WeAreFluentIn}</h2>
         <div className="flex flex-row pt-14 md:pt-20 justify-center">
           <TechStack logos={logos} />
         </div>
