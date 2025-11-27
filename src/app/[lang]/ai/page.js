@@ -67,7 +67,7 @@ const page = async (props) => {
           <ArrowBlocks lang={lang} content={content} showImmediately={true}/>
         </div>
         <h2 className="mb-8 pt-14 md:pt-20">{aiPage.h2WeAreFluentIn}</h2>
-        <div className="flex flex-row pt-14 md:pt-20 justify-center">
+        <div>
           <TechStack logos={logos} />
         </div>
         <div className="flex flex-col gap-y-10 pt-14 md:pt-20 pb-10">
