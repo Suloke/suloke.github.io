@@ -47,7 +47,7 @@ const page = async (props) => {
     {
       src: "/logos/aws.svg",
       alt: "AWS",
-      width: 100,
+      width: 90,
       height: 64,
       url: "https://aws.amazon.com",
     },
@@ -58,7 +58,13 @@ const page = async (props) => {
       height: 64,
       url: "https://aws.amazon.com",
     },
-    
+    {
+      src: "/logos/R.svg",
+      alt: "R",
+      width: 75,
+      height: 94,
+      url: "https://www.r-project.org",
+    },
   ];
 
   const content = {
