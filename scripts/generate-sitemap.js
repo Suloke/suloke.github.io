@@ -12,6 +12,7 @@ const generateSitemap = async () => {
     "/",
     "/web",
     "/mobile",
+    "/ai",
     "/contact",
     "/privacy-policy",
     "/ahmed",
