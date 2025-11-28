@@ -28,6 +28,37 @@ const page = async (props) => {
       height: 60,
       url: "https://www.python.org",
     },
+    {
+      src: "/logos/javascript.svg",
+      alt: "Javascript",
+      width: 70,
+      height: 60,
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      src: "/logos/typescript.svg",
+      alt: "Typescript",
+      width: 180,
+      height: 64,
+      url: "https://www.typescriptlang.org",
+    },
+    { src: "/logos/c.svg", alt: "C", width: 50, height: 50, url: "" },
+    { src: "/logos/cplus.svg", alt: "C plus", width: 50, height: 50, url: "" },
+    {
+      src: "/logos/aws.svg",
+      alt: "AWS",
+      width: 100,
+      height: 64,
+      url: "https://aws.amazon.com",
+    },
+    {
+      src: "/logos/nodejs.svg",
+      alt: "NodeJs",
+      width: 150,
+      height: 64,
+      url: "https://aws.amazon.com",
+    },
+    
   ];
 
   const content = {
@@ -37,17 +68,22 @@ const page = async (props) => {
     },
     text: [
       {
-        title: aiPage.contentTitle1,
-        text: aiPage.contentText1,
+        title: aiPage.contentTitleCAI,
+        text: aiPage.contentTextCAI,
       },
       {
-        title: aiPage.contentTitle2,
-        text: aiPage.contentText2,
+        title: aiPage.contentTitleWA,
+        text: aiPage.contentTextWA,
       },
       {
-        title: aiPage.contentTitle3,
-        text: aiPage.contentText3,
+        title: aiPage.contentTitleRAG,
+        text: aiPage.contentTextRAG,
       },
+      {
+        title: aiPage.contentTitleCRM,
+        text: aiPage.contentTextCRM,
+      },
+      
     ],
   };
 
@@ -57,8 +93,9 @@ const page = async (props) => {
         <div className="flex flex-col gap-y-3 md:gap-y-4 lg:gap-y-5 lg:mb-8">
           {" "}
           {/* Intro */}
-          <h1 className="text-center pb-6 lg:mb-8">{aiPage.title}</h1>
+          <h1 className="pb-6 lg:mb-8">{aiPage.title}</h1>
           <p className="whitespace-pre-line">{aiPage.text1}</p>
+          <p className="whitespace-pre-line">{aiPage.text2}</p>
         </div>
         <div className="flex flex-col w-full items-center pt-14 md:pt-20">
           {" "}

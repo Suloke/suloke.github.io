@@ -80,6 +80,13 @@ const page = async (props) => {
       height: 40,
       url: "https://www.mapbox.com",
     },
+    {
+      src: "/logos/javascript.svg",
+      alt: "Javascript",
+      width: 70,
+      height: 60,
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
   ];
   const references = [
     {

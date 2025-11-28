@@ -60,6 +60,20 @@
     "contentText6": "بعد النشر، نستخدم أدوات مثل Firebase Crashlytics لرصد المشكلات، وFirebase Performance لتحليل الأداء. يمكننا جمع بيانات الاستخدام وتحليل السلوك لتحديد الميزات المطلوبة وتطوير التطبيق بشكل أفضل.",
     "h2WeAreFluentIn": "نحن نتقن..."
   },
+  "aiPage": {
+    "title": "دمج الذكاء الاصطناعي في أعمالكم",
+    "text1": "نؤمن بأهمية تسخير الذكاء الاصطناعي بمسؤولية، مع التركيز على تحقيق عائد استثماري مستدام وقابل للقياس. انطلاقًا من تحليل أساسي لعملياتكم واحتياجات أعمالكم، نصمم ونبني حلول ذكاء اصطناعي مثالية تُعالج نقاط الضعف والتحديات التي تواجهونها.",
+    "text2": "يلتزم فريقنا بابتكار حلول مستدامة تُضيف قيمة حقيقية لعملائنا، ونقدم لكم شريكًا متواصلًا ومرنًا في تعزيز عملياتكم المستقبلية.",
+    "contentTitleCAI": "CUSTOM AI-SOLUTIONS",
+    "contentTextCAI": "We have a wide repertoire of capabilities in creating bespoke applications using AI-technology for each individual use case. These include developing Chatbots, Natural Language User Interfaces, AI-powered data analysis, Computer Vision for quality control or document processing, Predictive Models informing responses, and dashboards with advanced features to facilitate effective decision making. Our solutions are engineered from the ground up to fit your unique workflows, operations, and business logic.",
+    "contentTitleWA": "WORKFLOW AUTOMATION",
+    "contentTextWA": "We design and build AI agents using tools like n8n to connect disparate applications and services in a purposeful manner. We create custom nodes and logic to orchestrate information and action between CRM, ERP, communication platforms, databases, and your internal systems. These customized workflows can be made to run on your own servers, incorporating Human-In-The-Loop approval steps, with reusability baked into the architecture from the start — providing you with predictable and sustainable AI-agents. We can automate complex business processes, such as Lead Management, Data Synchronization, and Notification Systems. Providing you with efficient, affordable, scalable and visually legible automation solutions.",
+    "contentTitleRAG": "SEARCH-AND-ANSWER",
+    "contentTextRAG": "We design Retrieval-Augmented Generation (RAG) solutions that allow AI to work safely and accurately with your own data: documents, knowledge bases, Wikis, CRMs and internal systems. Instead of relying on a generic model, the AI retrieves relevant, up-to-date information from your predefined sources, and uses it to generate grounded, auditable answers. Typical use cases include internal support assistants, “chat with your documents”, technical documentation copilots, and decision-support tools for specialists. Our RAG implementations are designed with security, access control, and monitoring in mind, ensuring that the right people see the right information at the right time.",
+    "contentTitleMCP": "MCP IMPLEMENTATION",
+    "contentTextMCP": "Model Context Protocol (MCP) servers are standardized connectors that act as governed bridges for AIs to interact with your internal systems. Through an MCP server, AI can execute specific, authenticated actions and access real-time information from your internal APIs, databases and software. For example a personal AI assistant can read and create entries in your calendar, using your calendar provider’s MCP server to access your data. Creating a connecting bridge for AI, you can safely and purposefully open your system to your customers, and third party AI agents  —  fostering ecosystem growth and integration. MCP server unlocks the full potential of AI by connecting it directly to your Core Business Operations. This enables AI to be used in a powerful, custom-tailored manner; achieving deep, actionable AI-integration with enterprise-level security and governance.",
+    "h2WeAreFluentIn": "WE ARE FLUENT IN.."
+  },
   "contactPage": {
     "addContact": "Add Me to Phone Book",
     "email": "Email",
