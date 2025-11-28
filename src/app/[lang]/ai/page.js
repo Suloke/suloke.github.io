@@ -76,18 +76,23 @@ const page = async (props) => {
       {
         title: aiPage.contentTitleCAI,
         text: aiPage.contentTextCAI,
+        text2: aiPage.contentTextCAI2,
       },
       {
         title: aiPage.contentTitleWA,
         text: aiPage.contentTextWA,
+        text2: aiPage.contentTextWA2,
       },
       {
         title: aiPage.contentTitleRAG,
         text: aiPage.contentTextRAG,
+        text2: aiPage.contentTextRAG2,
       },
       {
-        title: aiPage.contentTitleCRM,
-        text: aiPage.contentTextCRM,
+        title: aiPage.contentTitleMCP,
+        text: aiPage.contentTextMCP,
+        text2: aiPage.contentTextMCP2,
+        text3: aiPage.contentTextMCP3,
       },
       
     ],

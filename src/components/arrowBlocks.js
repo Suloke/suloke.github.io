@@ -85,6 +85,8 @@ const ArrowBlocks = ({ lang, content, showImmediately = false }) => {
           >
             <h3 className="text-xl">{item.title}</h3>
             <p className="px-2 pt-2 whitespace-pre-line">{item.text}</p>
+            <p className="px-2 pt-6 whitespace-pre-line">{item.text2}</p>
+            <p className="px-2 pt-6 whitespace-pre-line">{item.text3}</p>
           </div>
 
           {index < content.text.length - 1 && (
