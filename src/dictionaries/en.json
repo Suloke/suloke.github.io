@@ -39,7 +39,7 @@
     "contentTitle3": "DEVELOPMENT",
     "contentText3": "With a ready and tested prototype of the site as the guide, we begin development. We use Next.Js; a cutting edge development framework for designing fast and sleek web-applications. Next.Js incorporates Server-Side Rendering(SSR) and Static Site Generation(SSG), making the site fast and easily discoverable for search engines. The open source Strapi is used for the customized Content Management System. The site will be implemented using Clean Architecture, ensuring ease of maintenance and further development down the line.",
     "contentTitle4": "SUPPORT",
-    "contentText4": "The ready site will be subjected to User Acceptance Testing, masking sure the site adheres to the requirements set with the customer during Discovery and Design. Once the web-application has been launched, our team provides you with guidance and support in using the site, as well as a period of guarantee for the proper functioning of your new site.",
+    "contentText4": "The ready site will be subjected to User Acceptance Testing, making sure the site adheres to the requirements set with the customer during Discovery and Design. Once the web-application has been launched, our team provides you with guidance and support in using the site, as well as a period of guarantee for the proper functioning of your new site.",
     "h2WeAreFluentIn": "WE ARE FLUENT IN.."
   },
   "mobilePage": {
